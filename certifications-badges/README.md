@@ -29,7 +29,7 @@ Below are the certifications and digital badges I have earned, grouped by catego
 
 | Badge | Certification | Verification |
 |-------|---------------|--------------|
-| <img src="../certifications-badges/badges/ccna-itn" alt="CCNA ITN" width="120"/> | CCNA: Introduction to Networks | [Verify](https://www.credly.com/badges/54001af3-82b8-4edf-812d-d5c3039e97f2) |
+| <img src="../certifications-badges/badges/ccna-itn.png" alt="CCNA ITN" width="120"/> | CCNA: Introduction to Networks | [Verify](https://www.credly.com/badges/54001af3-82b8-4edf-812d-d5c3039e97f2) |
 | <img src="../certifications-badges/badges/ccna-srwe.png.png" alt="CCNA SRWE" width="120"/> | CCNA: Switching, Routing, and Wireless Essentials | [Verify](https://www.credly.com/badges/9bbdb0d4-6cd3-4ce3-8430-9bb1aeaa99a5) |
 | <img src="../certifications-badges/badges/networking-basics.png" alt="Networking Basics" width="120"/> | Networking Basics | [Verify](https://www.credly.com/badges/75588756-a465-44c6-a442-1c7c6c2cbd3c) |
 | <img src="../certifications-badges/badges/networking-devices.png" alt="Networking Devices" width="120"/> | Networking Devices and Initial Configuration | [Verify](https://www.credly.com/badges/526b9e28-6a51-4d09-9cbe-4e54c08630c0) |
