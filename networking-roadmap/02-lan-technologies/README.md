@@ -1,4 +1,4 @@
-# 2. 🌐 LAN Technologies (VLANs, Trunking, Inter-VLAN Routing)
+# 2. LAN Technologies (VLANs, Trunking, Inter-VLAN Routing)
 
 [⬅ Back to Home](../../README.md) · [← Previous](../01-network-design-fundamentals/README.md) · [Next →](../03-switching-technologies/README.md)
 
