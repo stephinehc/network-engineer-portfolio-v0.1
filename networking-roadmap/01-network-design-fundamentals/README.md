@@ -36,8 +36,8 @@ This section introduces the foundational concepts of IP addressing, subnetting, 
 ### 2. Identify the Default Subnet Mask
 - Each class has a default mask:
   - Class A → `255.0.0.0` or `/8`
-  - Class B → `255.255.0.0` or `16`
-  - Class C → `255.255.255.0` or `24`
+  - Class B → `255.255.0.0` or `/16`
+  - Class C → `255.255.255.0` or `/24`
 
 ### 3. Network ID
 - The network ID is the portion of the IP defined by the default mask.
