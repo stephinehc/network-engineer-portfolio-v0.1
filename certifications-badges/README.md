@@ -34,6 +34,9 @@ Below are the certifications and digital badges I have earned, grouped by catego
 ## 🌐 Networking
 
 <p align="center">
+  <a href="https://www.credly.com/badges/54001af3-82b8-4edf-812d-d5c3039e97f2">
+    <img src="../certifications-badges/badges/ccna-itn.png" alt="CCNA: Switching, Routing, and Wireless Essentials" width="120"/>
+  </a>
   <a href="https://www.credly.com/badges/9bbdb0d4-6cd3-4ce3-8430-9bb1aeaa99a5">
     <img src="certifications-badges/badges/ccna-srwe.png" alt="CCNA: Switching, Routing, and Wireless Essentials" width="120"/>
   </a>
