@@ -28,33 +28,32 @@ This section introduces the foundational concepts of IP addressing, subnetting, 
   - Case A: If requirement is number of Networks (Subnets)
   - Case B: If requirement is number of Hosts/Subnet
 
-# 5 Easy Steps in Doing Subnetting
-
-## 1. Identify the Default Class of the Network IP
+## 5 Easy Steps in Doing Subnetting
+### 1. Identify the Default Class of the Network IP
 - Determine whether the IP address belongs to Class A, B, or C.
 - Example: `192.168.1.0` → Class C
 
-## 2. Identify the Default Subnet Mask
+### 2. Identify the Default Subnet Mask
 - Each class has a default mask:
   - Class A → `255.0.0.0`
   - Class B → `255.255.0.0`
   - Class C → `255.255.255.0`
 
-## 3. Network ID
+### 3. Network ID
 - The network ID is the portion of the IP defined by the default mask.
 - Example: `192.168.1.0` with mask `255.255.255.0` → Network ID is `N.N.N.H` where `N` represents the network portion and `H` as host portion
 - Number of subnets (x_s) = \(2^n\) (where *n* = borrowed bits)
 - Usable Hosts per subnet (x_h) = \(2^h - 2\) (where *h* = host bits) <br> NOTE: the "-2" refers to the Network IP and Broadcast IP per subnet
 
-## 4. Customized Subnet Mask
+### 4. Customized Subnet Mask
 - Borrow bits from the host portion to create subnets.
 - Example: `255.255.255.192` (borrowed 2 bits from Class C)
 
-## 5. IP Range
+### 5. IP Range
 - Calculate the valid host range for each subnet.
 - Example: Subnet `192.168.1.0/26` → Range `192.168.1.1 – 192.168.1.62`
 
-## 6. Subnet Table
+### 6. Subnet Table
 - Summarize all subnets for clarity and quick reference.
 
 
