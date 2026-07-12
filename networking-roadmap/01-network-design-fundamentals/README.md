@@ -42,8 +42,8 @@ This section introduces the foundational concepts of IP addressing, subnetting, 
 ### 3. Network ID
 - The network ID is the portion of the IP defined by the default mask.
 - Example: `192.168.1.0` with mask `255.255.255.0` → Network ID is `N.N.N.H` where `N` represents the network portion and `H` as host portion
-- Number of subnets (x_s) = \(2^n\) (where *n* = borrowed bits)
-- Usable Hosts per subnet (x_h) = \(2^h - 2\) (where *h* = host bits) <br> NOTE: the "-2" refers to the Network IP and Broadcast IP per subnet
+- Number of subnets (x_s) = \(2^n\) (where *n* = borrowed bits host bits)
+- Usable Hosts per subnet (x_h) = \(2^h - 2\) (where *h* = remaining host bits) <br> NOTE: the "-2" refers to the Network IP and Broadcast IP per subnet
 
 ### 4. Customized Subnet Mask
 - Borrow bits from the host portion to create subnets.
