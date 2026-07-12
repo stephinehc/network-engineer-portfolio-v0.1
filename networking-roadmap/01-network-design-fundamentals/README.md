@@ -73,16 +73,40 @@ Needs a smaller subnet for office PCs, printers, and internal applications.
   <img width="660" height="339" alt="image" src="https://github.com/user-attachments/assets/e2646d27-a480-4470-9e83-579327cdd15a" />
 
 
-- **Subnetting Formula**:  
+### Steps
 
+### 1. Identify the Default Class of the Network IP
+- Given IP: Class A  
+- Default subnet mask (SM): `255.0.0.0` or `/8`
 
-- **CIDR Example**:  
-  - `192.168.10.0/26` → 4 subnets, 62 hosts each  
+### 2. Identify the Default Subnet Mask
+- Class A → `/8` → `255.0.0.0`
 
-- **Diagram Idea**:  
-  - Show a network divided into multiple subnets with different mask lengths (e.g., `/24`, `/26`, `/30`) to illustrate VLSM.  
+### 3. Network ID
+- Representation: `N.H.H.H`  
+- Binary mask: `11111111.00000000.00000000.00000000`  
+- Host bits available: 24  
+- Requirement: At least 2 subnets (Production and Administration)  
+- Formula: \(x_s = 2^n\)  
+  - Borrowed bits: \(n = 1\)  
+  - Subnets: \(2^1 = 2\)  
+- Remaining host bits: 23  
+- Hosts per subnet: \(x_h = (2^{23}) - 2 = 8,388,606\)
 
-*(Add your own hand-drawn or Visio diagrams here for clarity.)*
+### 4. Customized Subnet Mask
+- New mask: `/8 + 1 = /9`  
+- Equivalent: `255.128.0.0`
+
+### 5. IP Range
+- Block size: \(256 - 128 = 128\)
+
+### 6. Subnet Table
+
+| Subnet No. | Network IP Address | Range of Usable Host IPs       | Broadcast IP Address |
+|------------|--------------------|--------------------------------|----------------------|
+| 1          | 10.`0`.0.0/9         | 10.0.0.1 – 10.127.255.254      | 10.`127`.255.255/9     |
+| 2          | 10.`128`.0.0/9       | 10.128.0.1 – 10.255.255.254    | 10.`255`.255.255/9     |
+
 
 ---
 
