@@ -1,6 +1,6 @@
 # 8. Secure WAN (GRE over IPsec VPN)
 
-[⬅ Back to Home](../../README.md) · [⬅ Networking Roadmap](../networking-roadmap/README.md) <br><br>
+[⬅ Back to Home](../../README.md) · [⬅ Networking Roadmap](../README.md) <br><br>
 [← Previous](../07-high-availability/README.md) · [Next →](../09-enterprise-campus-network-concepts/README.md)
 
 ---
@@ -58,5 +58,5 @@ This section focuses on secure Wide Area Network (WAN) connectivity using tunnel
 
 ---
 
-[⬅ Back to Home](../../README.md) · [⬅ Networking Roadmap](../networking-roadmap/README.md) <br><br>
+[⬅ Back to Home](../../README.md) · [⬅ Networking Roadmap](../README.md) <br><br>
 [← Previous](../07-high-availability/README.md) · [Next →](../09-enterprise-campus-network-concepts/README.md)
