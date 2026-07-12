@@ -4,10 +4,18 @@
 
 ---
 
-This is the 9-stage path I used to build the knowledge behind the [projects](../projects/README.md)
-in this portfolio, kept here as a **reference guide for others working toward network engineering**.
-If you're evaluating my hands-on skills, the [Skills Matrix](../skills-matrix/README.md) and
-[Projects](../projects/README.md) are the best places to look.
+<p align="justify">
+This is the 9-stage path I used to build the knowledge behind the 
+<a href="../projects/README.md">projects</a> in this portfolio, kept here as a 
+<strong>reference guide for others working toward network engineering</strong>.
+</p>
+
+<p align="justify">
+If you're evaluating my hands-on skills, the 
+<a href="../skills-matrix/README.md">Skills Matrix</a> and 
+<a href="../projects/README.md">Projects</a> are the best places to look.
+</p>
+
 
 1. [Network Design Fundamentals](./01-network-design-fundamentals/README.md)
 2. [LAN Technologies](./02-lan-technologies/README.md)
