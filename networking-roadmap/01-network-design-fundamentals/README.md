@@ -4,28 +4,44 @@
 
 ---
 
-## Overview
+# 📘 Network Design Fundamentals (Subnetting & VLSM)
 
-Core principles of structured network design: hierarchical models (core/distribution/access), the Cisco three-tier and two-tier collapsed-core models, redundancy planning, and how to translate business requirements into a topology.
+## Overview
+This section introduces the foundational concepts of IP addressing, subnetting, and Variable Length Subnet Masking (VLSM). These skills are essential for designing efficient, scalable, and organized networks. Mastery of subnetting ensures proper allocation of IP addresses, while VLSM allows flexible design tailored to specific network requirements.
+
+---
 
 ## Topics Covered
+- IPv4 address structure (Network ID, Host ID)
+- Subnet masks and CIDR notation
+- Subnetting step-by-step process
+- Calculating usable host ranges
+- Variable Length Subnet Masking (VLSM) for hierarchical design
+- Address planning for LANs and WANs
+- Common subnetting scenarios in enterprise networks
 
-- _Add specific subtopics, protocols, or concepts studied here._
-- _Add another._
-- _Add another._
+---
 
 ## Notes & Diagrams
+- **Subnetting Formula**:  
+  - Number of subnets = \(2^n\) (where *n* = borrowed bits)  
+  - Hosts per subnet = \(2^h - 2\) (where *h* = host bits)  
 
-Place topology diagrams, config screenshots, or notes in the [`images/`](./images) folder and
-reference them below.
+- **CIDR Example**:  
+  - `192.168.10.0/26` → 4 subnets, 62 hosts each  
 
-```
-![diagram](./images/diagram.png)
-```
+- **Diagram Idea**:  
+  - Show a network divided into multiple subnets with different mask lengths (e.g., `/24`, `/26`, `/30`) to illustrate VLSM.  
+
+*(Add your own hand-drawn or Visio diagrams here for clarity.)*
+
+---
 
 ## Resources
-
-- _Link any courses, docs, or references used for this topic._
+- 📖 [Cisco Networking Academy: Subnetting](https://www.netacad.com/courses/networking)
+- 📘 [RFC 950: Internet Standard Subnetting Procedure](https://www.rfc-editor.org/rfc/rfc950)
+- 🧮 Online Subnet Calculator: [Subnetting Practice Tool](https://www.subnetting.net)
+- 🎥 YouTube: “Subnetting Made Easy” tutorials
 
 ---
 
