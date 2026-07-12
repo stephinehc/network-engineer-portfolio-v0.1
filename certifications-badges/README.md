@@ -1,4 +1,4 @@
-# 🎖️ Certifications & Badges
+# 🎖️ Certifications & Digital Badges
 
 [⬅ Back to Home](../README.md)
 
@@ -10,20 +10,15 @@ All verified certifications and digital badges are on my Credly profile:
 
 **🔗 [View my Credly badges →](https://www.credly.com/users/stephine-hubert-campos)**
 
-## Certifications
+Here are my earned certifications and badges:
 
-| Certification | Status | Date |
-|---|---|---|
-| _e.g. Cisco Certified Network Associate (CCNA)_ | _In progress / Earned_ | _—_ |
-| _e.g. CompTIA Network+_ | _In progress / Earned_ | _—_ |
+| Badge | Certification | Verification |
+|-------|---------------|--------------|
+| ![CCNA: ITN](../assets/images/badges/ccna.png) | Cisco Certified Network Associate (CCNA) | [Verify on Credly](https://www.credly.com/badges/54001af3-82b8-4edf-812d-d5c3039e97f2s) |
+| ![AWS Badge](../assets/images/badges/aws-certified.png) | AWS Certified Solutions Architect | [Verify on Credly](https://www.credly.com/users/stephine-hubert-campos/badges) |
+| ![CompTIA Badge](../assets/images/badges/comptia-networkplus.png) | CompTIA Network+ | [Verify on Credly](https://www.credly.com/users/stephine-hubert-campos/badges) |
 
-## Badges
 
-_List or embed badge images here once earned, e.g.:_
-
-```
-![badge](./badges/ccna-badge.png)
-```
 
 ---
 
