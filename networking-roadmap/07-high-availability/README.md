@@ -1,6 +1,6 @@
 # 7. High Availability (HSRP)
 
-[⬅ Back to Home](../../README.md) · [← Previous](../06-network-security/README.md) · [Next →](../08-secure-wan/README.md)
+[⬅ Back to Home](../../README.md) · [⬅ Networking Roadmap](../networking-roadmap/README.md) <br><br> [← Previous](../06-network-security/README.md) · [Next →](../08-secure-wan/README.md)
 
 ---
 
@@ -51,4 +51,4 @@ This section introduces the concept of high availability in enterprise networks,
 
 ---
 
-[⬅ Back to Home](../../README.md) · [← Previous](../06-network-security/README.md) · [Next →](../08-secure-wan/README.md)
+[⬅ Back to Home](../../README.md) · [⬅ Networking Roadmap](../networking-roadmap/README.md) <br><br> [← Previous](../06-network-security/README.md) · [Next →](../08-secure-wan/README.md)
