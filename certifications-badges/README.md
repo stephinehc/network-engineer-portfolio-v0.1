@@ -9,7 +9,7 @@
 All verified certifications and digital badges are on my Credly profile:
 
 **🔗 [View my Credly badges →](https://www.credly.com/users/stephine-hubert-campos)**
-```
+
 ## Certifications
 
 | Certification | Status | Date |
@@ -21,7 +21,7 @@ All verified certifications and digital badges are on my Credly profile:
 
 _List or embed badge images here once earned, e.g.:_
 
-
+```
 ![badge](./badges/ccna-badge.png)
 ```
 
