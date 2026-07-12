@@ -45,4 +45,4 @@ This section introduces the foundational concepts of IP addressing, subnetting, 
 
 ---
 
-[⬅ Back to Home](../../README.md) · [⬅ Networking Roadmap](../networking-roadmap/README.md) <br><br> [Next →](../02-lan-technologies/README.md)
+[⬅ Back to Home](../../README.md) · [⬅ Networking Roadmap](../README.md) <br><br> [Next →](../02-lan-technologies/README.md)
