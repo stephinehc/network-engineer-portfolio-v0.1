@@ -21,7 +21,11 @@ Below are the certifications and digital badges I have earned, grouped by catego
 
 | Badge | Certification | Verification |
 |-------|---------------|--------------|
-| <img src="../certifications-badges/badges/instructor-1yr.png.png" alt="Instructor 1 Year of Service (Cisco)" width="60"/> | Instructor 1 Year of Service (Cisco) | [Verify](https://www.credly.com/badges/608ca1e4-647b-4777-9a30-1244605dd119) |
+| <img src="../certifications-badges/badges/instructor-1yr.png.png" 
+     alt="Instructor 1 Year of Service (Cisco)" width="60"/> 
+| Instructor 1 Year of Service (Cisco) | 
+<a href="https://www.credly.com/badges/608ca1e4-647b-4777-9a30-1244605dd119" target="_blank">Verify</a>
+ |
 | <img src="../certifications-badges/badges/instructor-5yr.png.png" alt="Instructor 5 Years of Service (Cisco)" width="60"/> | Instructor 5 Years of Service (Cisco) | [Verify](https://www.credly.com/badges/9cf09fd1-7623-4b9c-ac8c-f919af357e46) |
 
 ---
