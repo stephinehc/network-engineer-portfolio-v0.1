@@ -28,8 +28,9 @@ This section introduces the foundational concepts of IP addressing, subnetting, 
   - Case B: If requirement is number of Hosts/Subnet
 
 - Case A: If requirement is number of Networks (Subnets)
-- <img width="660" height="339" alt="image" src="https://github.com/user-attachments/assets/e2646d27-a480-4470-9e83-579327cdd15a" />
-
+<p align="justify">
+  <img width="660" height="339" alt="image" src="https://github.com/user-attachments/assets/e2646d27-a480-4470-9e83-579327cdd15a" />
+</p>
 
 - **Subnetting Formula**:  
   - Number of subnets = \(2^n\) (where *n* = borrowed bits)  
