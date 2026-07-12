@@ -1,6 +1,6 @@
 # Project 5: Company with Internet
 
-[⬅ Back to Home](../../README.md) · [← Previous](../project-4-three-building-university/README.md) · [Next →](../project-6-secure-enterprise/README.md)
+[⬅ Back to Home](../../README.md) · [⬅ Projects](../README.md) <br> <br> [← Previous](../project-4-three-building-university/README.md) · [Next →](../project-6-secure-enterprise/README.md)
 
 ---
 
@@ -39,4 +39,4 @@ _What this project taught you, and what you'd do differently next time._
 
 ---
 
-[⬅ Back to Home](../../README.md) · [← Previous](../project-4-three-building-university/README.md) · [Next →](../project-6-secure-enterprise/README.md)
+[⬅ Back to Home](../../README.md) · [⬅ Projects](../README.md) <br> <br>[← Previous](../project-4-three-building-university/README.md) · [Next →](../project-6-secure-enterprise/README.md)
