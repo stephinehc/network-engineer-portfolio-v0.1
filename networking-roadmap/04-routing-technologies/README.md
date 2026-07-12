@@ -1,6 +1,6 @@
 # 4. Routing Technologies (Static, RIP, OSPF)
 
-[⬅ Back to Home](../../README.md) · [⬅ Networking Roadmap](../networking-roadmap/README.md) <br><br> [← Previous](../03-switching-technologies/README.md) · [Next →](../05-network-services/README.md)
+[⬅ Back to Home](../../README.md) · [⬅ Networking Roadmap](../README.md) <br><br> [← Previous](../03-switching-technologies/README.md) · [Next →](../05-network-services/README.md)
 
 ---
 
@@ -52,4 +52,4 @@ This section introduces the routing technologies that allow data to move efficie
 ---
 
 
-[⬅ Back to Home](../../README.md) · [⬅ Networking Roadmap](../networking-roadmap/README.md) <br><br> [← Previous](../03-switching-technologies/README.md) · [Next →](../05-network-services/README.md)
+[⬅ Back to Home](../../README.md) · [⬅ Networking Roadmap](../README.md) <br><br> [← Previous](../03-switching-technologies/README.md) · [Next →](../05-network-services/README.md)
