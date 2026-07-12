@@ -20,8 +20,8 @@ Below are the certifications and digital badges I have earned, grouped by catego
 
 | Badge | Certification | Verification |
 |-------|---------------|--------------|
-| ![Instructor 1 Year](../certifications-badges/badges/instructor-1yr.png) | Instructor 1 Year of Service (Cisco) | [Verify](https://www.credly.com/badges/608ca1e4-647b-4777-9a30-1244605dd119) |
-| ![Instructor 5 Years](../certifications-badges/badges/instructor-5yr.png) | Instructor 5 Years of Service (Cisco) | [Verify](https://www.credly.com/badges/9cf09fd1-7623-4b9c-ac8c-f919af357e46) |
+| ![Instructor 1 Year](../certifications-badges/badges/instructor-1yr.png.png) | Instructor 1 Year of Service (Cisco) | [Verify](https://www.credly.com/badges/608ca1e4-647b-4777-9a30-1244605dd119) |
+| ![Instructor 5 Years](../certifications-badges/badges/instructor-5yr.png.png) | Instructor 5 Years of Service (Cisco) | [Verify](https://www.credly.com/badges/9cf09fd1-7623-4b9c-ac8c-f919af357e46) |
 
 ---
 
@@ -29,7 +29,7 @@ Below are the certifications and digital badges I have earned, grouped by catego
 
 | Badge | Certification | Verification |
 |-------|---------------|--------------|
-| ![CCNA SRWE](../certifications-badges/badges/ccna-srwe.png) | CCNA: Switching, Routing, and Wireless Essentials | [Verify](https://www.credly.com/badges/9bbdb0d4-6cd3-4ce3-8430-9bb1aeaa99a5) |
+| ![CCNA SRWE](../certifications-badges/badges/ccna-srwe.png.png) | CCNA: Switching, Routing, and Wireless Essentials | [Verify](https://www.credly.com/badges/9bbdb0d4-6cd3-4ce3-8430-9bb1aeaa99a5) |
 | ![Networking Basics](../certifications-badges/badges/networking-basics.png) | Networking Basics | [Verify](https://www.credly.com/badges/75588756-a465-44c6-a442-1c7c6c2cbd3c) |
 | ![Networking Devices](../certifications-badges/badges/networking-devices.png) | Networking Devices and Initial Configuration | [Verify](https://www.credly.com/badges/526b9e28-6a51-4d09-9cbe-4e54c08630c0) |
 | ![Network Addressing](../certifications-badges/badges/network-addressing.png) | Network Addressing and Basic Troubleshooting | [Verify](https://www.credly.com/badges/ce76c731-694f-455d-a908-513d92e3f9eb) |
