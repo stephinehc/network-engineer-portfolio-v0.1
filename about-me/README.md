@@ -4,18 +4,22 @@
 
 ---
 
-Hi, I'm **Stephine** 👋 — an Engineering College Instructor and licensed Electronics Engineer,
+<p align="justify">
+Hi, I'm <strong>Stephine</strong> 👋 — an Engineering College Instructor and licensed Electronics Engineer,
 now building out my hands-on network engineering portfolio alongside my teaching work.
+</p>
 
 ## My story
 
-I'm a **licensed Electronics Engineer** and **Certified Cisco Instructor**, teaching the Cisco
-Networking Academy curriculum — **ITN** (Introduction to Networks), **SRWE** (Switching, Routing,
-and Wireless Essentials), and **ENSA** (Enterprise Networking, Security, and Automation). Through
+<p align="justify">
+I'm a <strong>licensed Electronics Engineer</strong> and <strong>Certified Cisco Instructor</strong>, teaching the Cisco
+Networking Academy curriculum — <strong>ITN</strong> (Introduction to Networks), <strong>SRWE</strong> (Switching, Routing,
+and Wireless Essentials), and <strong>ENSA</strong> (Enterprise Networking, Security, and Automation). Through
 years in the classroom and lab, I've been consistently exposed to Cisco routers and switches,
 guiding students through the same fundamentals-to-enterprise path this repository documents.
 This portfolio is where I formalize that experience into my own structured roadmap and hands-on
 project builds.
+</p>
 
 ## What I do
 
@@ -30,9 +34,11 @@ project builds.
 
 ## What's next
 
-Beyond networking, I'm currently branching out into **cybersecurity** and **data analytics** —
+<p align="justify">
+Beyond networking, I'm currently branching out into <strong>cybersecurity</strong> and <strong>data analytics</strong> —
 areas that build naturally on a networking foundation, from securing the infrastructure I build
 to making sense of the data that moves across it.
+</p>
 
 ## Tools I use
 
