@@ -24,11 +24,11 @@ project builds.
 - 📜 Certified Cisco Instructor — ITN, SRWE, ENSA
 - 🖧 Hands-on with Cisco routers and switches (classroom and lab environments)
 - Working through my own 9-stage networking roadmap (fundamentals → enterprise campus design)
-- Building hands-on labs in Cisco Packet Tracer / GNS3 / EVE-NG
+- Building hands-on labs in Cisco Packet Tracer / actual routers and switches.
 
 ## Tools I use
 
-`Cisco Packet Tracer` `GNS3` `Cisco IOS CLI` `Wireshark` `VS Code` `Git/GitHub`
+`Cisco Packet Tracer` `Cisco IOS CLI` `Wireshark` `CMD` `Powershell` `Git/GitHub`
 
 ## Beyond networking
 
