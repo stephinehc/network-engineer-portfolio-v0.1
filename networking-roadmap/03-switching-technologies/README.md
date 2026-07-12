@@ -1,6 +1,6 @@
 # 3. Switching Technologies (STP, EtherChannel)
 
-[⬅ Back to Home](../../README.md) · [← Previous](../02-lan-technologies/README.md) · [Next →](../04-routing-technologies/README.md)
+[⬅ Back to Home](../../README.md) · [⬅ Networking Roadmap](../networking-roadmap/README.md) <br><br> [← Previous](../02-lan-technologies/README.md) · [Next →](../04-routing-technologies/README.md)
 
 ---
 
@@ -48,4 +48,4 @@ This section explores the switching technologies that ensure redundancy, loop pr
 
 ---
 
-[⬅ Back to Home](../../README.md) · [← Previous](../02-lan-technologies/README.md) · [Next →](../04-routing-technologies/README.md)
+[⬅ Back to Home](../../README.md) · [⬅ Networking Roadmap](../networking-roadmap/README.md) <br><br> [← Previous](../02-lan-technologies/README.md) · [Next →](../04-routing-technologies/README.md)
