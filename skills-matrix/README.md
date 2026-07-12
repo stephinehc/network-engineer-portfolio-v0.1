@@ -5,9 +5,10 @@
 ---
 <p align="justify">
 A summary of my proficiency across core networking domains, built through the
-[networking roadmap](../networking-roadmap/README.md) and demonstrated hands-on in the
-[project builds](../projects/README.md) in this repository.
+<a href="../networking-roadmap/README.md">networking roadmap</a> and demonstrated hands-on in the
+<a href="../projects/README.md">project builds</a> in this repository.
 </p>
+
 
 | Skill Area | Level | Applied In |
 |---|---|---|
