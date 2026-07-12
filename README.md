@@ -41,6 +41,5 @@ Each section above has its own README. Every roadmap stage and every project inc
 - 🐙 GitHub: [github.com/stephinehc](https://github.com/stephinehc)
 
 ---
-Built while learning network engineering, one lab at a time. 🖧
 
 Licensed under the [MIT License](./LICENSE).
