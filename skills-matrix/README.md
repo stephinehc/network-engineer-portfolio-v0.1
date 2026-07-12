@@ -3,10 +3,11 @@
 [⬅ Back to Home](../README.md)
 
 ---
-
+<p align="justify">
 A summary of my proficiency across core networking domains, built through the
 [networking roadmap](../networking-roadmap/README.md) and demonstrated hands-on in the
 [project builds](../projects/README.md) in this repository.
+</p>
 
 | Skill Area | Level | Applied In |
 |---|---|---|
