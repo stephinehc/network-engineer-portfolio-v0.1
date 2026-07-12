@@ -33,12 +33,12 @@ Company: EduTech Manufacturing Corp.  <br>
 Industry: Educational equipment and technology solutions<br>
 They have two major departments that need separate networks:
 
-Production Department
-Handles manufacturing of school supplies and tech devices.
+Production Department<br>
+Handles manufacturing of school supplies and tech devices.<br>
 Requires a large subnet for factory machines, IoT sensors, and production servers.
 
-Administration Department
-Includes HR, Finance, and Management offices.
+Administration Department<br>
+Includes HR, Finance, and Management offices.<br>
 Needs a smaller subnet for office PCs, printers, and internal applications.
 
   <img width="660" height="339" alt="image" src="https://github.com/user-attachments/assets/e2646d27-a480-4470-9e83-579327cdd15a" />
