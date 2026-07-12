@@ -41,7 +41,7 @@ Below are the certifications and digital badges I have earned, grouped by catego
     <img src="../certifications-badges/badges/ccna-srwe.png" alt="CCNA: Switching, Routing, and Wireless Essentials" width="120"/>
   </a>
   <a href="https://www.credly.com/badges/75588756-a465-44c6-a442-1c7c6c2cbd3c">
-    <img src="certifications-badges/badges/networking-basics.png" alt="Networking Basics" width="120"/>
+    <img src="../certifications-badges/badges/networking-basics.png" alt="Networking Basics" width="120"/>
   </a>
   <a href="https://www.credly.com/badges/526b9e28-6a51-4d09-9cbe-4e54c08630c0">
     <img src="../certifications-badges/badges/networking-devices.png" alt="Networking Devices and Initial Configuration" width="120"/>
@@ -72,7 +72,7 @@ Below are the certifications and digital badges I have earned, grouped by catego
     <img src="../certifications-badges/badges/endpoint-security.png" alt="Endpoint Security" width="120"/>
   </a>
   <a href="https://www.credly.com/badges/ea38672f-f34a-45a9-80f3-99000847b91a">
-    <img src="certifications-badges/badges/network-defense.png" alt="Network Defense" width="120"/>
+    <img src="../certifications-badges/badges/network-defense.png" alt="Network Defense" width="120"/>
   </a>
   <a href="https://www.credly.com/badges/5e83e3b6-1a47-4c2d-acb0-9da7af0596cf">
     <img src="../certifications-badges/badges/cyber-threat.png" alt="Cyber Threat Management" width="120"/>
