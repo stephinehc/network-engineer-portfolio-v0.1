@@ -8,7 +8,7 @@
 
 All verified certifications and digital badges are on my Credly profile:
 
-**🔗 [View my Credly badges →](https://www.credly.com/users/your-credly-username)**
+**🔗 [View my Credly badges →](https://www.credly.com/users/stephine-hubert-campos)**
 
 ## Certifications
 
