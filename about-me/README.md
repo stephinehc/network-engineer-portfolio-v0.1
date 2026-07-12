@@ -26,7 +26,7 @@ project builds.
 - 🔐 Currently exploring cybersecurity
 - 📊 Currently exploring data analytics
 - Working through my own 9-stage networking roadmap (fundamentals → enterprise campus design)
-- Building hands-on labs in Cisco Packet Tracer / GNS3 / EVE-NG
+- Building hands-on labs in Cisco Packet Tracer / actual environment
 
 ## What's next
 
@@ -36,7 +36,7 @@ to making sense of the data that moves across it.
 
 ## Tools I use
 
-`Cisco Packet Tracer` `GNS3` `Cisco IOS CLI` `Wireshark` `VS Code` `Git/GitHub`
+`Cisco Packet Tracer` `Cisco IOS CLI` `Wireshark` `CMD` `Powershell` `tftpd64` `SQL` `Splunk` `OSINT` `Git/GitHub`
 
 ## Beyond networking
 
