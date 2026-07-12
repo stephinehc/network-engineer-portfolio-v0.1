@@ -30,7 +30,7 @@ link back here, plus **Previous / Next** links so you can move through them in o
 
 ## Contact
 
-- ✉️ Email: _your-email@example.com_
+- ✉️ Email: _2k16st.cmp@gmail.com_
 - 💼 LinkedIn: _linkedin.com/in/your-profile_
 - 🐙 GitHub: [github.com/stephinehc](https://github.com/stephinehc)
 
