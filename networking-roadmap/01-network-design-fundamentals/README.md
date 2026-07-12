@@ -1,10 +1,9 @@
-# 1. Network Design Fundamentals
+# 1. Network Design Fundamentals (Subnetting & VLSM)
 
 [⬅ Back to Home](../../README.md) · [Next →](../02-lan-technologies/README.md)
 
 ---
 
-# 📘 Network Design Fundamentals (Subnetting & VLSM)
 
 ## Overview
 <p align="justify">
