@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stephine Campos — Network Engineer Portfolio</title>
+<meta name="description" content="Aspiring network engineer portfolio — roadmap, labs, and certifications.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #0B1220;
+    --panel: #121B2E;
+    --panel-2: #0E1626;
+    --line: #23324A;
+    --text: #E7ECF5;
+    --muted: #8FA0BE;
+    --signal: #4FD1C5;
+    --signal-dim: #2C7A73;
+    --amber: #F0B429;
+    --radius: 6px;
+    --mono: 'IBM Plex Mono', ui-monospace, monospace;
+    --sans: 'IBM Plex Sans', system-ui, sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:
+      radial-gradient(1200px 600px at 85% -10%, rgba(79,209,197,0.07), transparent 60%),
+      var(--bg);
+    color:var(--text);
+    font-family:var(--sans);
+    line-height:1.6;
+  }
+  a{color:var(--signal);}
+  ::selection{background:var(--signal); color:#04120F;}
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; scroll-behavior:auto !important;}
+  }
+
+  /* ---------- Top nav ---------- */
+  .topnav{
+    position:sticky; top:0; z-index:50;
+    background:rgba(11,18,32,0.85);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .topnav-inner{
+    position:relative;
+    max-width:1100px; margin:0 auto; padding:14px 24px;
+    display:flex; align-items:center; justify-content:space-between; gap:16px;
+  }
+  .brand{
+    font-family:var(--mono); font-weight:600; font-size:15px; letter-spacing:0.02em;
+    color:var(--text); text-decoration:none; display:flex; align-items:center; gap:8px;
+    min-width:0;
+  }
+  .brand .path{white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+  .brand .dot{flex:none; width:8px; height:8px; border-radius:50%; background:var(--signal); box-shadow:0 0 8px var(--signal); animation:pulse 2.2s ease-in-out infinite;}
+  @keyframes pulse{0%,100%{opacity:1;} 50%{opacity:0.35;}}
+  .tabs{display:flex; gap:4px; flex-wrap:wrap;}
+  .tab-btn{
+    font-family:var(--mono); font-size:13px; color:var(--muted);
+    background:transparent; border:1px solid transparent; padding:7px 12px;
+    border-radius:var(--radius); cursor:pointer; text-decoration:none;
+    transition:color .15s ease, border-color .15s ease, background .15s ease;
+  }
+  .tab-btn:hover{color:var(--text); border-color:var(--line);}
+  .tab-btn.active{color:var(--signal); border-color:var(--signal-dim); background:rgba(79,209,197,0.06);}
+
+  .nav-toggle{
+    display:none; flex:none; width:38px; height:38px; align-items:center; justify-content:center;
+    background:transparent; border:1px solid var(--line); border-radius:var(--radius); cursor:pointer;
+    padding:0;
+  }
+  .nav-toggle span, .nav-toggle::before, .nav-toggle::after{
+    content:""; display:block; width:16px; height:2px; background:var(--text); position:relative;
+    transition:transform .2s ease, opacity .2s ease;
+  }
+  .nav-toggle::before{position:absolute; transform:translateY(-6px);}
+  .nav-toggle::after{position:absolute; transform:translateY(6px);}
+  .nav-toggle.open span{opacity:0;}
+  .nav-toggle.open::before{transform:rotate(45deg);}
+  .nav-toggle.open::after{transform:rotate(-45deg);}
+
+  /* ---------- Mobile nav ---------- */
+  @media (max-width:700px){
+    .topnav-inner{padding:12px 16px;}
+    .brand{font-size:13px;}
+    .nav-toggle{display:flex;}
+    .tabs{
+      display:none; position:absolute; top:100%; left:0; right:0;
+      flex-direction:column; gap:2px; padding:10px 16px 16px;
+      background:var(--bg); border-bottom:1px solid var(--line);
+    }
+    .tabs.open{display:flex;}
+    .tab-btn{padding:12px 10px; font-size:15px; border-bottom:1px solid var(--line); border-radius:0;}
+    .tab-btn:last-child{border-bottom:none;}
+  }
+
+  section{max-width:1100px; margin:0 auto; padding:88px 24px;}
+  section:first-of-type{padding-top:56px;}
+  @media (max-width:700px){
+    section{padding:56px 18px;}
+    section:first-of-type{padding-top:32px;}
+  }
+  .eyebrow{
+    font-family:var(--mono); font-size:12px; letter-spacing:0.12em; text-transform:uppercase;
+    color:var(--signal); margin:0 0 14px;
+  }
+  h1,h2,h3{font-family:var(--mono); font-weight:600; letter-spacing:-0.01em; margin:0;}
+  h2{font-size:26px; margin-bottom:34px; display:flex; align-items:baseline; gap:12px; flex-wrap:wrap;}
+  h2 .idx{color:var(--muted); font-size:16px; font-weight:400;}
+  p{color:var(--muted);}
+  .lead{color:var(--text); font-size:17px;}
+  @media (max-width:700px){
+    h2{font-size:21px; margin-bottom:24px;}
+    h2 .idx{font-size:13px;}
+    .lead{font-size:15.5px;}
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    padding-top:64px; padding-bottom:64px;
+    display:grid; grid-template-columns:1.1fr 0.9fr; gap:48px; align-items:center;
+  }
+  @media (max-width:800px){ .hero{grid-template-columns:1fr;} }
+  @media (max-width:700px){ .hero{padding-top:8px; padding-bottom:40px; gap:32px;} }
+  .hero h1{font-size:44px; line-height:1.15; margin-bottom:18px;}
+  .hero h1 .accent{color:var(--signal);}
+  .hero p.lead{max-width:46ch; margin-bottom:28px;}
+  .cta-row{display:flex; gap:12px; flex-wrap:wrap;}
+  .btn{
+    font-family:var(--mono); font-size:14px; padding:11px 18px; border-radius:var(--radius);
+    text-decoration:none; display:inline-flex; align-items:center; gap:8px; transition:transform .12s ease, background .15s ease;
+    border:1px solid var(--line);
+  }
+  .btn:hover{transform:translateY(-1px);}
+  .btn-primary{background:var(--signal); color:#04120F; border-color:var(--signal); font-weight:600;}
+  .btn-primary:hover{background:#63e0d4;}
+  .btn-ghost{background:transparent; color:var(--text);}
+  .btn-ghost:hover{border-color:var(--signal-dim); color:var(--signal);}
+  @media (max-width:700px){
+    .hero h1{font-size:30px;}
+    .hero p.lead{max-width:none;}
+    .cta-row{flex-direction:column; align-items:stretch;}
+    .cta-row .btn{justify-content:center;}
+  }
+  @media (max-width:400px){
+    .hero h1{font-size:26px;}
+  }
+
+  /* Terminal signature element */
+  .terminal{
+    background:var(--panel); border:1px solid var(--line); border-radius:8px;
+    font-family:var(--mono); font-size:13px; overflow:hidden;
+    box-shadow:0 20px 60px -20px rgba(0,0,0,0.6);
+  }
+  .terminal-bar{
+    display:flex; align-items:center; gap:6px; padding:10px 14px; border-bottom:1px solid var(--line);
+    background:var(--panel-2);
+  }
+  .terminal-bar span{width:10px; height:10px; border-radius:50%; background:#3a4a63;}
+  .terminal-bar .lbl{margin-left:8px; color:var(--muted); font-size:12px;}
+  .terminal-body{padding:18px 16px; color:#B9E3DD; min-height:180px;}
+  .terminal-body .prompt{color:var(--signal);}
+  .terminal-body .out{color:var(--muted);}
+  .caret{display:inline-block; width:7px; height:14px; background:var(--signal); vertical-align:-2px; animation:blink 1s step-end infinite;}
+  @keyframes blink{50%{opacity:0;}}
+  .status-line{display:flex; align-items:center; gap:8px; margin-top:4px; flex-wrap:wrap;}
+  .led{flex:none; width:7px; height:7px; border-radius:50%; background:var(--signal); box-shadow:0 0 6px var(--signal); animation:pulse 1.8s ease-in-out infinite;}
+  @media (max-width:400px){
+    .terminal-body{font-size:12px; padding:14px 12px;}
+  }
+
+  /* ---------- Cards / grid ---------- */
+  .grid{display:grid; grid-template-columns:repeat(3,1fr); gap:16px;}
+  @media (max-width:900px){ .grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:600px){ .grid{grid-template-columns:1fr;} }
+  .card{
+    background:var(--panel); border:1px solid var(--line); border-radius:var(--radius);
+    padding:20px; transition:border-color .15s ease, transform .15s ease;
+  }
+  .card:hover{border-color:var(--signal-dim); transform:translateY(-2px);}
+  .card .num{font-family:var(--mono); color:var(--signal); font-size:12px; margin-bottom:8px; display:block;}
+  .card h3{font-size:15px; margin-bottom:8px; font-weight:600; color:var(--text);}
+  .card p{font-size:13.5px; margin:0 0 14px;}
+  .card a.link{font-family:var(--mono); font-size:12.5px; text-decoration:none;}
+  .card a.link:hover{text-decoration:underline;}
+
+  .roadmap-list{border-left:2px solid var(--line); margin-left:6px;}
+  .roadmap-item{position:relative; padding:14px 0 14px 26px;}
+  .roadmap-item::before{
+    content:""; position:absolute; left:-7px; top:20px; width:12px; height:12px; border-radius:50%;
+    background:var(--panel); border:2px solid var(--signal);
+  }
+  .roadmap-item h3{font-size:15px; margin-bottom:4px; color:var(--text);}
+  .roadmap-item p{font-size:13.5px; margin:0 0 8px;}
+  .roadmap-item a.link{font-family:var(--mono); font-size:12.5px; text-decoration:none;}
+
+  .tag{
+    font-family:var(--mono); font-size:11px; color:var(--muted); border:1px solid var(--line);
+    padding:3px 8px; border-radius:4px; margin:0 6px 6px 0; display:inline-block;
+  }
+
+  .skills-row{display:flex; flex-wrap:wrap; gap:8px; margin-top:8px;}
+
+  footer{
+    border-top:1px solid var(--line); padding:36px 24px 48px; text-align:center;
+  }
+  footer p{font-size:13px;}
+  footer .foot-links a{margin:0 10px; text-decoration:none; font-family:var(--mono); font-size:13px;}
+
+  .contact-card{
+    background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:32px;
+    max-width:520px;
+  }
+  .contact-row{display:flex; align-items:center; gap:10px; margin-bottom:14px; font-family:var(--mono); font-size:14px;}
+  .contact-row a{text-decoration:none; word-break:break-word;}
+  .contact-row a:hover{text-decoration:underline;}
+  @media (max-width:700px){
+    .contact-card{padding:22px; max-width:none;}
+    footer .foot-links a{display:inline-block; margin:4px 10px;}
+  }
+
+  .section-hide{display:none;}
+</style>
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="topnav-inner">
+    <a href="#home" class="brand"><span class="dot"></span><span class="path">stephinehc / network-engineer-portfolio</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="tabs"><span></span></button>
+    <div class="tabs" id="tabs">
+      <a class="tab-btn active" data-target="home" href="#home">Home</a>
+      <a class="tab-btn" data-target="about" href="#about">About Me</a>
+      <a class="tab-btn" data-target="roadmap" href="#roadmap">Roadmap</a>
+      <a class="tab-btn" data-target="projects" href="#projects">Projects</a>
+      <a class="tab-btn" data-target="contact" href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HOME ================= -->
+<section id="home">
+  <div class="hero">
+    <div>
+      <p class="eyebrow">// engineering instructor · certified cisco instructor</p>
+      <h1>Building networks,<br>one <span class="accent">config</span> at a time.</h1>
+      <p class="lead">I'm Stephine — an Engineering College Instructor, licensed Electronics
+        Engineer, and Certified Cisco Instructor (ITN, SRWE, ENSA). This portfolio showcases the
+        hands-on network builds I've completed on Cisco routers and switches — a reference for
+        interviewers, plus a study roadmap for anyone learning the field.</p>
+      <div class="skills-row" style="margin-bottom:24px;">
+        <span class="tag">🎓 Engineering College Instructor</span>
+        <span class="tag">🪪 Licensed Electronics Engineer</span>
+        <span class="tag">📜 Cisco Certified Instructor — ITN · SRWE · ENSA</span>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#projects">See my projects</a>
+        <a class="btn btn-ghost" href="https://github.com/stephinehc/network-engineer-portfolio-v0.1" target="_blank" rel="noopener">GitHub repo →</a>
+      </div>
+    </div>
+    <div class="terminal">
+      <div class="terminal-bar"><span></span><span></span><span></span><span class="lbl">stephine@router-01</span></div>
+      <div class="terminal-body">
+        <div><span class="prompt">router-01#</span> show interface status</div>
+        <div class="out">
+          <div class="status-line"><span class="led"></span> Gi0/1  connected  &nbsp;VLAN 10  &nbsp;full  &nbsp;1000</div>
+          <div class="status-line"><span class="led"></span> Gi0/2  connected  &nbsp;VLAN 20  &nbsp;full  &nbsp;1000</div>
+          <div class="status-line"><span class="led"></span> Gi0/3  connected  &nbsp;trunk   &nbsp;&nbsp;full  &nbsp;1000</div>
+        </div>
+        <div style="margin-top:14px;"><span class="prompt">router-01#</span> whoami</div>
+        <div class="out">stephine — network engineer in training<span class="caret"></span></div>
+      </div>
+    </div>
+  </div>
+
+  <h2>Quick links <span class="idx">// portfolio sections</span></h2>
+  <div class="grid">
+    <div class="card">
+      <span class="num">01</span>
+      <h3>About Me</h3>
+      <p>Background, goals, and what led me into networking.</p>
+      <a class="link" href="#about">View section →</a>
+    </div>
+    <div class="card">
+      <span class="num">02</span>
+      <h3>Certifications &amp; Badges</h3>
+      <p>Credly profile and in-progress certifications.</p>
+      <a class="link" href="https://github.com/stephinehc/network-engineer-portfolio-v0.1/tree/main/certifications-badges" target="_blank" rel="noopener">View on GitHub →</a>
+    </div>
+    <div class="card">
+      <span class="num">03</span>
+      <h3>Skills Matrix</h3>
+      <p>Demonstrated proficiency across core networking domains — mapped to the projects below.</p>
+      <a class="link" href="https://github.com/stephinehc/network-engineer-portfolio-v0.1/tree/main/skills-matrix" target="_blank" rel="noopener">View on GitHub →</a>
+    </div>
+    <div class="card">
+      <span class="num">04</span>
+      <h3>Networking Roadmap</h3>
+      <p>A 9-stage study guide, included as a reference for anyone learning network engineering.</p>
+      <a class="link" href="#roadmap">View section →</a>
+    </div>
+    <div class="card">
+      <span class="num">05</span>
+      <h3>Projects</h3>
+      <p>9 hands-on lab builds, small office to enterprise capstone.</p>
+      <a class="link" href="#projects">View section →</a>
+    </div>
+    <div class="card">
+      <span class="num">06</span>
+      <h3>Contact</h3>
+      <p>Get in touch — always happy to connect with other learners.</p>
+      <a class="link" href="#contact">View section →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <h2>About Me <span class="idx">// who I am</span></h2>
+  <p class="lead" style="max-width:70ch;">Hi, I'm <strong>Stephine</strong> 👋 — an
+    <strong>Engineering College Instructor</strong> and licensed <strong>Electronics Engineer</strong>,
+    also a <strong>Certified Cisco Instructor</strong> for <strong>ITN</strong> (Introduction to
+    Networks), <strong>SRWE</strong> (Switching, Routing, and Wireless Essentials), and
+    <strong>ENSA</strong> (Enterprise Networking, Security, and Automation) under the Cisco
+    Networking Academy curriculum.</p>
+  <p style="max-width:70ch;">Years of teaching and lab work have kept me consistently hands-on
+    with Cisco routers and switches. This portfolio is where I bring that classroom experience
+    into my own structured roadmap and project builds — tracking every step of the journey in
+    this repository.</p>
+  <div class="skills-row">
+    <span class="tag">🎓 Engineering College Instructor</span>
+    <span class="tag">🪪 Licensed Electronics Engineer</span>
+    <span class="tag">📜 Certified Cisco Instructor — ITN</span>
+    <span class="tag">📜 SRWE</span>
+    <span class="tag">📜 ENSA</span>
+  </div>
+  <div class="skills-row" style="margin-top:0;">
+    <span class="tag">Cisco Routers &amp; Switches</span>
+    <span class="tag">Cisco Packet Tracer</span>
+    <span class="tag">GNS3</span>
+    <span class="tag">Wireshark</span>
+    <span class="tag">Cisco IOS CLI</span>
+    <span class="tag">Git / GitHub</span>
+  </div>
+  <p style="margin-top:24px;"><a class="link" href="https://github.com/stephinehc/network-engineer-portfolio-v0.1/tree/main/about-me" target="_blank" rel="noopener">Read the full About Me page on GitHub →</a></p>
+</section>
+
+<!-- ================= ROADMAP ================= -->
+<section id="roadmap">
+  <h2>Networking Roadmap <span class="idx">// a guide for learners</span></h2>
+  <p style="max-width:70ch; margin-bottom:32px;">This 9-stage path is what I used to build the
+    knowledge behind my <a href="#projects">projects</a> — kept here as a reference for anyone
+    else working toward network engineering. If you're reviewing my hands-on skills, see the
+    <a href="https://github.com/stephinehc/network-engineer-portfolio-v0.1/tree/main/skills-matrix" target="_blank" rel="noopener">Skills Matrix</a>
+    and <a href="#projects">Projects</a> instead.</p>
+  <div class="roadmap-list">
+    <div class="roadmap-item">
+      <h3>1. Network Design Fundamentals</h3>
+      <p>Hierarchical models, redundancy planning, translating requirements into topology.</p>
+      <a class="link" href="https://github.com/stephinehc/network-engineer-portfolio-v0.1/tree/main/networking-roadmap/01-network-design-fundamentals" target="_blank" rel="noopener">View on GitHub →</a>
+    </div>
+    <div class="roadmap-item">
+      <h3>2. LAN Technologies</h3>
+      <p>Ethernet standards, cabling, VLANs and trunking (802.1Q).</p>
+      <a class="link" href="https://github.com/stephinehc/network-engineer-portfolio-v0.1/tree/main/networking-roadmap/02-lan-technologies" target="_blank" rel="noopener">View on GitHub →</a>
+    </div>
+    <div class="roadmap-item">
+      <h3>3. Switching Technologies</h3>
+      <p>STP/RSTP, EtherChannel/LACP, inter-VLAN routing.</p>
+      <a class="link" href="https://github.com/stephinehc/network-engineer-portfolio-v0.1/tree/main/networking-roadmap/03-switching-technologies" target="_blank" rel="noopener">View on GitHub →</a>
+    </div>
+    <div class="roadmap-item">
+      <h3>4. Routing Technologies</h3>
+      <p>Static routing, RIP, OSPF, EIGRP, redistribution and summarization.</p>
+      <a class="link" href="https://github.com/stephinehc/network-engineer-portfolio-v0.1/tree/main/networking-roadmap/04-routing-technologies" target="_blank" rel="noopener">View on GitHub →</a>
+    </div>
+    <div class="roadmap-item">
+      <h3>5. Network Services</h3>
+      <p>DHCP, DNS, NAT/PAT, NTP, and troubleshooting each.</p>
+      <a class="link" href="https://github.com/stephinehc/network-engineer-portfolio-v0.1/tree/main/networking-roadmap/05-network-services" target="_blank" rel="noopener">View on GitHub →</a>
+    </div>
+    <div class="roadmap-item">
+      <h3>6. Network Security</h3>
+      <p>ACLs, port security, AAA, VPN fundamentals, device hardening.</p>
+      <a class="link" href="https://github.com/stephinehc/network-engineer-portfolio-v0.1/tree/main/networking-roadmap/06-network-security" target="_blank" rel="noopener">View on GitHub →</a>
+    </div>
+    <div class="roadmap-item">
+      <h3>7. High Availability</h3>
+      <p>HSRP/VRRP/GLBP, redundant links, designing for zero single points of failure.</p>
+      <a class="link" href="https://github.com/stephinehc/network-engineer-portfolio-v0.1/tree/main/networking-roadmap/07-high-availability" target="_blank" rel="noopener">View on GitHub →</a>
+    </div>
+    <div class="roadmap-item">
+      <h3>8. Secure WAN</h3>
+      <p>Site-to-site and remote-access VPNs, IPsec, connecting branches securely.</p>
+      <a class="link" href="https://github.com/stephinehc/network-engineer-portfolio-v0.1/tree/main/networking-roadmap/08-secure-wan" target="_blank" rel="noopener">View on GitHub →</a>
+    </div>
+    <div class="roadmap-item">
+      <h3>9. Enterprise Campus Network Concepts</h3>
+      <p>Campus architecture, QoS basics, wireless integration, designing for scale.</p>
+      <a class="link" href="https://github.com/stephinehc/network-engineer-portfolio-v0.1/tree/main/networking-roadmap/09-enterprise-campus-network-concepts" target="_blank" rel="noopener">View on GitHub →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects">
+  <h2>Projects <span class="idx">// 9 hands-on builds</span></h2>
+  <div class="grid">
+    <div class="card">
+      <span class="num">Project 01</span>
+      <h3>Small Office Network</h3>
+      <p>Flat single-router/switch design: VLAN segmentation, DHCP, internet access for a small office.</p>
+      <a class="link" href="https://github.com/stephinehc/network-engineer-portfolio-v0.1/tree/main/projects/project-1-small-office-network" target="_blank" rel="noopener">View on GitHub →</a>
+    </div>
+    <div class="card">
+      <span class="num">Project 02</span>
+      <h3>Multi-Branch Company</h3>
+      <p>HQ and multiple branches connected with inter-site routing and consistent addressing.</p>
+      <a class="link" href="https://github.com/stephinehc/network-engineer-portfolio-v0.1/tree/main/projects/project-2-multi-branch-company" target="_blank" rel="noopener">View on GitHub →</a>
+    </div>
+    <div class="card">
+      <span class="num">Project 03</span>
+      <h3>Enterprise Campus Network</h3>
+      <p>Multilayer campus build: core/distribution/access, inter-VLAN routing, redundancy.</p>
+      <a class="link" href="https://github.com/stephinehc/network-engineer-portfolio-v0.1/tree/main/projects/project-3-enterprise-campus-network" target="_blank" rel="noopener">View on GitHub →</a>
+    </div>
+    <div class="card">
+      <span class="num">Project 04</span>
+      <h3>Three-Building University</h3>
+      <p>Per-building VLANs, inter-building routing, and campus-wide shared services.</p>
+      <a class="link" href="https://github.com/stephinehc/network-engineer-portfolio-v0.1/tree/main/projects/project-4-three-building-university" target="_blank" rel="noopener">View on GitHub →</a>
+    </div>
+    <div class="card">
+      <span class="num">Project 05</span>
+      <h3>Company with Internet</h3>
+      <p>Internet edge design: NAT/PAT, default routing, and basic perimeter security.</p>
+      <a class="link" href="https://github.com/stephinehc/network-engineer-portfolio-v0.1/tree/main/projects/project-5-company-with-internet" target="_blank" rel="noopener">View on GitHub →</a>
+    </div>
+    <div class="card">
+      <span class="num">Project 06</span>
+      <h3>Secure Enterprise</h3>
+      <p>Hardening an existing topology: ACLs, port security, AAA, device access control.</p>
+      <a class="link" href="https://github.com/stephinehc/network-engineer-portfolio-v0.1/tree/main/projects/project-6-secure-enterprise" target="_blank" rel="noopener">View on GitHub →</a>
+    </div>
+    <div class="card">
+      <span class="num">Project 07</span>
+      <h3>Headquarters &amp; Branch VPN</h3>
+      <p>Site-to-site IPsec VPN connecting HQ and a branch office over a simulated WAN link.</p>
+      <a class="link" href="https://github.com/stephinehc/network-engineer-portfolio-v0.1/tree/main/projects/project-7-headquarters-branch-vpn" target="_blank" rel="noopener">View on GitHub →</a>
+    </div>
+    <div class="card">
+      <span class="num">Project 08</span>
+      <h3>High Availability Network</h3>
+      <p>Redundant paths and gateways with HSRP/VRRP and EtherChannel.</p>
+      <a class="link" href="https://github.com/stephinehc/network-engineer-portfolio-v0.1/tree/main/projects/project-8-high-availability-network" target="_blank" rel="noopener">View on GitHub →</a>
+    </div>
+    <div class="card">
+      <span class="num">Project 09</span>
+      <h3>Enterprise Infrastructure Capstone</h3>
+      <p>Capstone combining routing, switching, security, HA, and WAN connectivity end-to-end.</p>
+      <a class="link" href="https://github.com/stephinehc/network-engineer-portfolio-v0.1/tree/main/projects/project-9-enterprise-infrastructure-capstone" target="_blank" rel="noopener">View on GitHub →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+  <h2>Contact <span class="idx">// say hello</span></h2>
+  <p style="max-width:60ch; margin-bottom:24px;">Always happy to connect with other learners, talk
+    networking, or hear feedback on any of these labs.</p>
+  <div class="contact-card">
+    <div class="contact-row">✉️ &nbsp;<a href="mailto:your-email@example.com">your-email@example.com</a></div>
+    <div class="contact-row">🐙 &nbsp;<a href="https://github.com/stephinehc" target="_blank" rel="noopener">github.com/stephinehc</a></div>
+    <div class="contact-row">💼 &nbsp;<a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">linkedin.com/in/your-profile</a></div>
+    <div class="contact-row">🎖️ &nbsp;<a href="https://www.credly.com/users/your-credly-username" target="_blank" rel="noopener">Credly badges</a></div>
+  </div>
+</section>
+
+<footer>
+  <p>Built while learning network engineering, one lab at a time. 🖧</p>
+  <div class="foot-links">
+    <a href="https://github.com/stephinehc/network-engineer-portfolio-v0.1" target="_blank" rel="noopener">Repository</a>
+    <a href="https://github.com/stephinehc/network-engineer-portfolio-v0.1/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a>
+    <a href="#home">Back to top</a>
+  </div>
+  <p style="margin-top:14px; font-size:12px;">© 2026 Stephine Campos. Licensed under the MIT License.</p>
+</footer>
+
+<script>
+  // Tab highlighting on scroll + click
+  const tabs = document.querySelectorAll('.tab-btn');
+  const sections = ['home','about','roadmap','projects','contact'].map(id => document.getElementById(id));
+  const navToggle = document.getElementById('navToggle');
+  const tabsEl = document.getElementById('tabs');
+
+  function setActive(id){
+    tabs.forEach(t => t.classList.toggle('active', t.dataset.target === id));
+  }
+
+  function closeMobileMenu(){
+    tabsEl.classList.remove('open');
+    navToggle.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+  }
+
+  navToggle.addEventListener('click', () => {
+    const isOpen = tabsEl.classList.toggle('open');
+    navToggle.classList.toggle('open', isOpen);
+    navToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      setActive(tab.dataset.target);
+      closeMobileMenu();
+    });
+  });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        setActive(entry.target.id);
+      }
+    });
+  }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+
+  sections.forEach(sec => sec && observer.observe(sec));
+</script>
+
+</body>
+</html>
