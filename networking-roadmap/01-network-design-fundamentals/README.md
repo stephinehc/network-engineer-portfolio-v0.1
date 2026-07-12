@@ -28,9 +28,21 @@ This section introduces the foundational concepts of IP addressing, subnetting, 
   - Case B: If requirement is number of Hosts/Subnet
 
 - Case A: If requirement is number of Networks (Subnets)
-<p align="justify">
+Example:
+Company: EduTech Manufacturing Corp.  
+Industry: Educational equipment and technology solutions
+They have two major departments that need separate networks:
+
+Production Department
+Handles manufacturing of school supplies and tech devices.
+Requires a large subnet for factory machines, IoT sensors, and production servers.
+
+Administration Department
+Includes HR, Finance, and Management offices.
+Needs a smaller subnet for office PCs, printers, and internal applications.
+
   <img width="660" height="339" alt="image" src="https://github.com/user-attachments/assets/e2646d27-a480-4470-9e83-579327cdd15a" />
-</p>
+
 
 - **Subnetting Formula**:  
   - Number of subnets = \(2^n\) (where *n* = borrowed bits)  
