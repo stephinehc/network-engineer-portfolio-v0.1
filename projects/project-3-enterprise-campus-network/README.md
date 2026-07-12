@@ -1,6 +1,6 @@
 # Project 3: Enterprise Campus Network
 
-[⬅ Back to Home](../../README.md) · [← Previous](../project-2-multi-branch-company/README.md) · [Next →](../project-4-three-building-university/README.md)
+[⬅ Back to Home](../../README.md) · [⬅ Projects](../README.md) <br> <br>[← Previous](../project-2-multi-branch-company/README.md) · [Next →](../project-4-three-building-university/README.md)
 
 ---
 
@@ -39,4 +39,4 @@ _What this project taught you, and what you'd do differently next time._
 
 ---
 
-[⬅ Back to Home](../../README.md) · [← Previous](../project-2-multi-branch-company/README.md) · [Next →](../project-4-three-building-university/README.md)
+[⬅ Back to Home](../../README.md) · [⬅ Projects](../README.md) <br> <br>[← Previous](../project-2-multi-branch-company/README.md) · [Next →](../project-4-three-building-university/README.md)
