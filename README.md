@@ -28,8 +28,11 @@ guide for anyone working toward network engineering — it's a resource, not a p
 
 ## About this repo
 
-Each section above has its own README. Every roadmap stage and every project includes a **Home**
-link back here, plus **Previous / Next** links so you can move through them in order.
+<p align="justify">
+Each section above has its own README. Every roadmap stage and every project includes a 
+<strong>Home</strong> link back here, plus <strong>Previous / Next</strong> links so you can move through them in order.
+</p>
+
 
 ## Contact
 
