@@ -1,6 +1,6 @@
 # 2. LAN Technologies (VLANs, Trunking, Inter-VLAN Routing)
 
-[⬅ Back to Home](../../README.md) · [← Previous](../01-network-design-fundamentals/README.md) · [Next →](../03-switching-technologies/README.md)
+[⬅ Back to Home](../../README.md) · [⬅ Networking Roadmap](../networking-roadmap/README.md) <br><br> [← Previous](../01-network-design-fundamentals/README.md) · [Next →](../03-switching-technologies/README.md)
 
 ---
 
@@ -47,4 +47,4 @@ This section covers the essential LAN technologies that enable segmentation, sca
 ---
 
 
-[⬅ Back to Home](../../README.md) · [← Previous](../01-network-design-fundamentals/README.md) · [Next →](../03-switching-technologies/README.md)
+[⬅ Back to Home](../../README.md) · [⬅ Networking Roadmap](../networking-roadmap/README.md) <br><br> [← Previous](../01-network-design-fundamentals/README.md) · [Next →](../03-switching-technologies/README.md)
