@@ -17,7 +17,7 @@ Below are the certifications and digital badges I have earned, grouped by catego
 
 ---
 
-## 👩‍🏫 Instructor Service
+## 👨‍🏫 Instructor Service
 
 | Badge | Certification | Verification |
 |-------|---------------|--------------|
