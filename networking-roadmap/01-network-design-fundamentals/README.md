@@ -25,8 +25,8 @@ This section introduces the foundational concepts of IP addressing, subnetting, 
 
 ## Notes & Diagrams
 - **Subnetting**
-  - Case A: If requirement is number of Networks (Subnets)
-  - Case B: If requirement is number of Hosts/Subnet
+  - **Case A**: If requirement is number of Networks (Subnets)
+  - **Case B**: If requirement is number of Hosts/Subnet
 
 ## 5 Easy Steps in Doing Subnetting
 ### 1. Identify the Default Class of the Network IP
@@ -58,15 +58,15 @@ This section introduces the foundational concepts of IP addressing, subnetting, 
 
 
 ### Case A Scenario <br>
-Company: EduTech Manufacturing Corp.  <br>
-Industry: Educational equipment and technology solutions<br>
+**Company**: EduTech Manufacturing Corp.  <br>
+**Industry**: Educational equipment and technology solutions<br>
 They have two major departments that need separate networks:
 
-Production Department<br>
+**Production Department**<br>
 Handles manufacturing of school supplies and tech devices.<br>
 Requires a large subnet for factory machines, IoT sensors, and production servers.
 
-Administration Department<br>
+**Administration Department**<br>
 Includes HR, Finance, and Management offices.<br>
 Needs a smaller subnet for office PCs, printers, and internal applications.
 
