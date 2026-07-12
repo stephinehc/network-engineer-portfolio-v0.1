@@ -107,6 +107,7 @@ Needs a smaller subnet for office PCs, printers, and internal applications.
 | 1          | 10.**0**.0.0/9         | 10.0.0.1 – 10.127.255.254      | 10.**127**.255.255/9     |
 | 2          | 10.**128**.0.0/9       | 10.128.0.1 – 10.255.255.254    | 10.**255**.255.255/9     |
 
+### 6. Assigning the network IP
 <img width="649" height="346" alt="image" src="https://github.com/user-attachments/assets/d3e611b3-5072-499e-96ac-19552b4e03a7" />
 
 ---
