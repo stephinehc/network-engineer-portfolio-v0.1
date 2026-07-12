@@ -1,6 +1,7 @@
 # 9. Enterprise Campus Network Concepts
 
-[⬅ Back to Home](../../README.md) · [⬅ Networking Roadmap](../networking-roadmap/README.md) · [← Previous](../08-secure-wan/README.md)
+[⬅ Back to Home](../../README.md) · [⬅ Networking Roadmap](../networking-roadmap/README.md)
+[← Previous](../08-secure-wan/README.md)
 
 ---
 
@@ -52,4 +53,5 @@ This section introduces the design principles and models used in enterprise camp
 ---
 
 
-[⬅ Back to Home](../../README.md) · [⬅ Networking Roadmap](../networking-roadmap/README.md) ·[← Previous](../08-secure-wan/README.md)
+[⬅ Back to Home](../../README.md) · [⬅ Networking Roadmap](../networking-roadmap/README.md)
+[← Previous](../08-secure-wan/README.md)
