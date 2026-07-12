@@ -1,6 +1,6 @@
 # Project 9: Enterprise Infrastructure Capstone
 
-[⬅ Back to Home](../../README.md) · [← Previous](../project-8-high-availability-network/README.md)
+[⬅ Back to Home](../../README.md) · [⬅ Projects](../README.md) <br> <br>[← Previous](../project-8-high-availability-network/README.md)
 
 ---
 
@@ -39,4 +39,4 @@ _What this project taught you, and what you'd do differently next time._
 
 ---
 
-[⬅ Back to Home](../../README.md) · [← Previous](../project-8-high-availability-network/README.md)
+[⬅ Back to Home](../../README.md) · [⬅ Projects](../README.md) <br> <br>[← Previous](../project-8-high-availability-network/README.md)
