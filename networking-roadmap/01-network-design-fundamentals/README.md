@@ -28,6 +28,7 @@ This section introduces the foundational concepts of IP addressing, subnetting, 
   - Case B: If requirement is number of Hosts/Subnet
 
 - Case A: If requirement is number of Networks (Subnets)
+
 Example:
 Company: EduTech Manufacturing Corp.  
 Industry: Educational equipment and technology solutions
