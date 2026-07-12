@@ -57,7 +57,7 @@ This section introduces the foundational concepts of IP addressing, subnetting, 
 - Summarize all subnets for clarity and quick reference.
 
 
-Case A Scenario <br>
+### Case A Scenario <br>
 Company: EduTech Manufacturing Corp.  <br>
 Industry: Educational equipment and technology solutions<br>
 They have two major departments that need separate networks:
