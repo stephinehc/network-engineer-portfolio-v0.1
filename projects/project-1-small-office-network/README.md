@@ -1,6 +1,6 @@
 # Project 1: Small Office Network
 
-[⬅ Back to Home](../../README.md) · [Next →](../project-2-multi-branch-company/README.md)
+[⬅ Back to Home](../../README.md) · [⬅ Projects](../README.md) <br> <br> [Next →](../project-2-multi-branch-company/README.md)
 
 ---
 
@@ -39,4 +39,4 @@ _What this project taught you, and what you'd do differently next time._
 
 ---
 
-[⬅ Back to Home](../../README.md) · [Next →](../project-2-multi-branch-company/README.md)
+[⬅ Back to Home](../../README.md) · [⬅ Projects](../README.md) <br> <br>[Next →](../project-2-multi-branch-company/README.md)
