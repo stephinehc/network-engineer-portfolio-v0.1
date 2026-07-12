@@ -9,6 +9,7 @@
 <p align="justify">
 This section introduces the foundational concepts of IP addressing, subnetting, and Variable Length Subnet Masking (VLSM). These skills are essential for designing efficient, scalable, and organized networks. Mastery of subnetting ensures proper allocation of IP addresses, while VLSM allows flexible design tailored to specific network requirements.
 </p>
+
 ---
 
 ## Topics Covered
