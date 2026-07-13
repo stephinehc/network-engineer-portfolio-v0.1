@@ -14,7 +14,7 @@ Requires a large subnet for factory machines, IoT sensors, and production server
 Includes HR, Finance, and Management offices.<br>
 Needs a smaller subnet for office PCs, printers, and internal applications.
 
-<img width="655" height="333" alt="image" src="https://github.com/user-attachments/assets/f6f5bb9a-fb11-4592-a26e-1d1949e780fd" />
+<img width="1417" height="551" alt="image" src="https://github.com/user-attachments/assets/62eb8fe6-f542-4887-9d6c-22f6456a290c" />
 
 We will use the Case B for subnetting (requirement is number of hosts/subnet), in which we work first with the network with the highest number of hosts which is in the network design that is Prod1 followed by Prod2 and Prod3 then lastly Administration Department.
 
@@ -62,12 +62,13 @@ We will use the Case B for subnetting (requirement is number of hosts/subnet), i
 | 4          | 192.168.0.192       | 192.168.0.193 – 192.168.0.254   | 192.168.0.255     |       |
 
 <p align="justify">
-We will use the 1st subnet for the Production Department and we can use the 2nd subnet for the Administration Department. But if we are to evaluate the number of required hosts for the Administration department, it only requires 5,000 hosts and the 2nd subnet has 32,676 hosts. There are approximately 27,000 hosts wasted. In order to efficiently use the 2nd network, we can subdivide it according to what is required. In which, we are now gonna be working with VLSM (Variable Length Subnet Masking).
+The 1st subnet (192.168.0.0/26) will be used for Prod1 department and we will now proceed for Prod2 and Prod3 since they both have the same requirement which is 30 hosts.
 </p> 
 
-### Assigning the network IP to Production Department
+### Assigning the network IP to Prod1 Department
 
-<img width="661" height="337" alt="image" src="https://github.com/user-attachments/assets/b35ccaab-4568-47e4-a49c-c4d1074c5a46" />
+<img width="1416" height="566" alt="image" src="https://github.com/user-attachments/assets/549baa30-f48c-4011-b517-9ade7a119283" />
+
 
 
 ### VLSM (Variable Length Subnet Masking)
