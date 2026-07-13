@@ -72,6 +72,7 @@ This section introduces the foundational concepts of IP addressing, subnetting, 
 ### 6. Subnet Table
 - Summarize all subnets for clarity and quick reference.
 
+---
 
 ### Case A Scenario <br>
 **Company**: EduTech Manufacturing Corp.  <br>
@@ -88,6 +89,7 @@ Needs a smaller subnet for office PCs, printers, and internal applications.
 
   <img width="660" height="339" alt="image" src="https://github.com/user-attachments/assets/e2646d27-a480-4470-9e83-579327cdd15a" />
 
+---
 
 ### Steps
 
