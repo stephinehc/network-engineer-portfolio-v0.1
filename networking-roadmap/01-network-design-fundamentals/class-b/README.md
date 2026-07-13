@@ -32,7 +32,8 @@ For Case B in subnetting (requirement is number of hosts/subnet), we will work f
 ![Blue](https://img.shields.io/badge/.0000%200000.0000%200000-blue)
 - Host bits available: 16  
 - Requirement: 20,000 hosts (Production Department)  
-- Formula: \(x_h = (2^h - 2)\) > required hosts
+- Formula:
+  - \(x_h = (2^h - 2)\) ≥ required hosts
   - Host bits needed: 15 host bits (movement of bits is from RIGHT to LEFT)  
   - Hosts/subnet: \(x_h = (2^15 - 2)\) = 32,676 usable hosts/subnet
 - Remaining bit(s): Host bits available - Host bits needed = 16 -15 = 1 (will become network bit `n`)
@@ -83,7 +84,8 @@ Let us now work on with subnetting the 2nd subnet (10.0.128.0/19) base on the nu
 ![Blue](https://img.shields.io/badge/000%200000.0000%200000-blue)
 - Host bits available: 15  
 - Requirement: 5,000 hosts (Administration Department)  
-- Formula: \(x_h = (2^h - 2)\) ≥ required hosts
+- Formula:
+  - \(x_h = (2^h - 2)\) ≥ required hosts
   - Host bits needed: 13 host bits (movement of bits is from RIGHT to LEFT)  
   - Hosts/subnet: \(x_h = (2^13 - 2)\) = 8,190 usable hosts/subnet
 - Remaining bit(s): Host bits available - Host bits needed = 15 - 13 = 2 (will become network bit `n`)
