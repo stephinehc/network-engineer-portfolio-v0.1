@@ -42,7 +42,7 @@ to making sense of the data that moves across it.
 
 ## Tools I use
 
-`Cisco Packet Tracer` `Cisco IOS CLI` `Wireshark` `CMD` `Powershell` `tftpd64` `SQL` `Splunk` `OSINT` `Git/GitHub`
+`Cisco Packet Tracer` `Cisco IOS CLI` `Wireshark` `CMD` `Powershell` `tftpd64` `SQL` `Splunk` `OSINT` `Git/GitHub` `MS Excel`
 
 ## Beyond networking
 
