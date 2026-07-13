@@ -67,7 +67,7 @@ We will use the 1st subnet for the Production Department and we can use the 2nd 
 <img width="664" height="357" alt="image" src="https://github.com/user-attachments/assets/6dd4fe4e-517d-45fc-88b4-2141a5922709" />
 
 ### VLSM (Variable Length Subnet Masking)
-Let us now work on with subnetting the 2nd subnet (10.0.128.0/19) base on the number of hosts required (5,000 hosts) for Administration Department.
+Let us now work on with subnetting the 2nd subnet (10.0.128.0/17) base on the number of hosts required (5,000 hosts) for Administration Department.
  
 ### Steps
 
