@@ -108,7 +108,7 @@ To determine the network IP address, we use the boolean logic AND. We call it th
 
 ---
 
-### Case A Scenario <br>
+## Case A Scenario <br>
 **Company**: EduTech Manufacturing Corp.  <br>
 **Industry**: Educational equipment and technology solutions<br>
 They have two major departments that need separate networks:
