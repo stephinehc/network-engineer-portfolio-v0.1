@@ -1,6 +1,6 @@
 [⬅ Back to Home](../../README.md) · [⬅ Networking Roadmap](../README.md) <br><br> [Next →](../02-lan-technologies/README.md)
 
-### Class C Subnetting <br>
+## Class C Subnetting <br>
 **Company**: EduTech Manufacturing Corp.  <br>
 **Industry**: Educational equipment and technology solutions<br>
 They have expanded and needs separate networks:
@@ -19,7 +19,7 @@ Needs a smaller subnet for office PCs, printers, and internal applications.
 We will use the Case B for subnetting (requirement is number of hosts/subnet), in which we work first with the network with the highest number of hosts which is in the network design that is Prod1 followed by Prod2 and Prod3 then lastly Administration Department.
 
 ---
-### For Prod1 Department
+## For Prod1 Department
 ### Steps
 
 ### 1. Identify the Default Class of the Network IP
@@ -72,7 +72,7 @@ The 1st subnet (192.168.0.0/26) will be used for Prod1 department and we will no
 
 
 ---
-### For Prod2 and Prod3 Department
+## For Prod2 and Prod3 Department
 ### VLSM (Variable Length Subnet Masking)
 Let us now work on with subnetting the 2nd subnet (192.168.0.64/26) base on the number of hosts required (30 hosts) for both Prod2 and Prod3 department. These means we need two networks that has 30 hosts/network.
  
@@ -103,7 +103,7 @@ Let us now work on with subnetting the 2nd subnet (192.168.0.64/26) base on the 
 - Equivalent: `255.255.255.224`
 - Originally `/24` and there is now 3 new network bits including the first subnetting we performed. We can use the subnet mask reference below to get the equivalent decimal value of the modified octet.
 
-  ## Subnet Mask Reference
+  ### Subnet Mask Reference
 
   | No. of Network Bits in an Octet | Equivalent Decimal Value |
   |----------------------|--------------------------|
@@ -138,7 +138,7 @@ We can now assign a network to Prod2 and Prod3.
 <img width="1433" height="572" alt="image" src="https://github.com/user-attachments/assets/59edc806-7c51-41eb-970f-a62679d902d6" />
 
 ---
-### For Administration Department
+## For Administration Department
 Since there is no longer available network (from the subnet of Prod2 and Prod3), we will go back to the Prod1 subnet table in which there are two networks that are available: 192.168.0.128/26 and 192.168.0.192/26. We can select any of these two available networks. Let's say we use 192.168.0.128/26.
 
 ### Steps
@@ -168,7 +168,7 @@ Since there is no longer available network (from the subnet of Prod2 and Prod3),
 - Equivalent: `255.255.255.240`
 - Originally `/24` and there is now 4 new network bits including the first subnetting we performed. We can use the subnet mask reference below to get the equivalent decimal value of the modified octet.
 
-  ## Subnet Mask Reference
+  ### Subnet Mask Reference
 
   | No. of Network Bits in an Octet | Equivalent Decimal Value |
   |----------------------|--------------------------|
