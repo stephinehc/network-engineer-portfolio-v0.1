@@ -25,8 +25,8 @@ This section introduces the foundational concepts of IP addressing, subnetting, 
 
 ## Notes & Diagrams
 - **Subnetting**
-  - **Case A**: If requirement is number of Networks (Subnets)
-  - **Case B**: If requirement is number of Hosts/Subnet
+  - **Case A**: If requirement is number of Networks (Movement of bits is from Left to Right)
+  - **Case B**: If requirement is number of Hosts/Subnet (Movement of bits is from Right to Left)
 
 ## 5 Easy Steps in Doing Subnetting
 ### 1. Identify the Default Class of the Network IP
@@ -84,15 +84,15 @@ Needs a smaller subnet for office PCs, printers, and internal applications.
 
 ### 3. Network ID
 - Representation: `N.H.H.H`  
-- Binary mask: `11111111.00000000.00000000.00000000`  
+- Binary mask: <span style="color:red">1111 1111.</span><span style="color:blue">0000 0000.0000 0000.0000 0000</span>  
 - Host bits available: 24  
 - Requirement: At least 2 subnets (Production and Administration)  
 - Formula: \(x_s = 2^n\)  
-  - Borrowed bits: \(n = 1\)  
+  - Borrowed bits: \(n = 1\) (Borrow 1 bit from the leftmost host portion)
   - Subnets: \(2^1 = 2\)  
 - Remaining host bits: 23  
 - Hosts per subnet: \(x_h = (2^{23}) - 2 = 8,388,606\)
-
+- New Binary Mask: <span style="color:red">1111 1111.1</span><span style="color:blue">000 0000.0000 0000.0000 0000</span> 
 ### 4. Customized Subnet Mask
 - New mask: `/8 + 1 = /9`  
 - Equivalent: `255.128.0.0`
