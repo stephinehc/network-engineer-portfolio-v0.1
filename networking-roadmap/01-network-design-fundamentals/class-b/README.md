@@ -1,6 +1,6 @@
 [⬅ Back to Home](../../README.md) · [⬅ Networking Roadmap](../README.md) <br><br> [Next →](../02-lan-technologies/README.md)
 
-### Case B Scenario <br>
+## Case B Scenario <br>
 **Company**: EduTech Manufacturing Corp.  <br>
 **Industry**: Educational equipment and technology solutions<br>
 They have two major departments that need separate networks:
@@ -67,7 +67,7 @@ We will use the 1st subnet for the Production Department and we can use the 2nd 
 <img width="661" height="337" alt="image" src="https://github.com/user-attachments/assets/b35ccaab-4568-47e4-a49c-c4d1074c5a46" />
 
 
-### VLSM (Variable Length Subnet Masking)
+## VLSM (Variable Length Subnet Masking)
 Let us now work on with subnetting the 2nd subnet (128.0.128.0/17) base on the number of hosts required (5,000 hosts) for Administration Department.
  
 ### Steps
