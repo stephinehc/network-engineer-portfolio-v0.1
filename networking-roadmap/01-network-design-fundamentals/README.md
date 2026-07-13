@@ -28,8 +28,9 @@ This section introduces the foundational concepts of IP addressing, subnetting, 
   - Background about converting Decimal Number to Binary Number and vice versa.
 
 ### IPv4 Address Stucture and Subnet Mask
+<p align="justify">
 An IPv4 address is composed of 32 bits and is divided into four octets. It is represented in decimal number system format. <br> <br>
-A subnet mask determines which octets belong to the network portion and host portion. <br>
+A subnet mask determines which octets belong to the network portion and host portion. </p><br>
 Example:<br>
 192.168.30.1/24<br>
 The prefix /24 represents the number of network bits (starting from the 1st octet going to the right). The
