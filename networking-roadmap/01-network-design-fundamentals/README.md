@@ -154,7 +154,7 @@ Needs a smaller subnet for office PCs, printers, and internal applications.
 If we use Class A, there are approximately 8.4 million host IP addresses that are available in each subnet in which, there are a lot of wasted IP addresses since the network topology is just for a small company. In addition, the network is not scalable since there are no reserve network IP addresses in case if the company will expand. Although, we can also consider using another network IP address if the company is planning to expand but it is an additional task. 
 </p>  
 <p align="justify">
-Always consider the best network design and not just use a random network IP class. Here are the things that needs to be considered in network design: Scalability, eliability, Fault Tolerance, Availability, QoS, and Security.
+Always consider the best network design and not just use a random network IP class. Here are the things that needs to be considered in network design: Scalability, Reliability, Fault Tolerance, Availability, QoS, and Security.
 </p>
  
 <p align="justify">
