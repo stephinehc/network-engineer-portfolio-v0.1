@@ -25,7 +25,7 @@ This section introduces the foundational concepts of IP addressing, subnetting, 
 
 ## Notes & Diagrams
 - **Requirement**
-  - Background about converting Decimal Number to Binary Number or vice versa.
+  - Background about converting Decimal Number to Binary Number and vice versa.
 - **Subnetting**
   - **Case A**: If requirement is number of Networks (Movement of bits is from Left to Right)
   - **Case B**: If requirement is number of Hosts/Subnet (Movement of bits is from Right to Left)
