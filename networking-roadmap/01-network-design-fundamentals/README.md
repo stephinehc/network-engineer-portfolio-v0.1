@@ -132,7 +132,7 @@ Needs a smaller subnet for office PCs, printers, and internal applications.
 | 2          | 10.**128**.0.0       | 10.128.0.1 – 10.255.255.254    | 10.**255**.255.255     |
 
 ### TIP
-If you want to verify if you got the correct subnet table, just check the last network IP address on your table. The block size value should be the value of your recent modified octet. In our case, the last network IP address of our subnet table is **10.128.0.0**, in which our block size value is **128** and is placed to the 2nd octet (the recent modified octet) but this **does not work with VLSM**.
+If you want to verify if you got the correct subnet table, just check the last network IP address then compare it with the subnet mask value of the recent modified octet and it should have the same value. In our case, the last network IP address of our subnet table is **10.128.0.0**, in which our subnet mask value in the recent modified octet (2nd octet) is **128**
 
 ### Assigning the network IP
 <img width="649" height="346" alt="image" src="https://github.com/user-attachments/assets/d3e611b3-5072-499e-96ac-19552b4e03a7" />
