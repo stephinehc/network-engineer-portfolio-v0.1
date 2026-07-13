@@ -116,12 +116,12 @@ Needs a smaller subnet for office PCs, printers, and internal applications.
 <img width="649" height="346" alt="image" src="https://github.com/user-attachments/assets/d3e611b3-5072-499e-96ac-19552b4e03a7" />
 
 <p align="justify">
-If you noticed, if we use Class A there are approximately 8.4 million host IP addresses that are available in each subnet in which, there are a lot of wasted IP addresses since the network topology is just for a small company. In addition, the network is not scalable since there are no reserve network IP addresses in case if the company will expand. However, we can also consider using another network IP address if the company is planning to expand. 
-</p>  <br>
+If you noticed, if we use Class A there are approximately 8.4 million host IP addresses that are available in each subnet in which, there are a lot of wasted IP addresses since the network topology is just for a small company. In addition, the network is not scalable since there are no reserve network IP addresses in case if the company will expand. Although, we can also consider using another network IP address if the company is planning to expand but it is an additional task. 
+</p>  
 <p align="justify">
 Always consider the best network design and not just use a random network IP class. Here are the things that needs to be considered in network design: Scalability, eliability, Fault Tolerance, Availability, QoS, and Security.
 </p>
-  <br>
+ 
 <p align="justify">
 Base on the network design we have, I can say that it is poorly designed. So, let us go ahead and correct it. Take note that our goal for now is to have a scalable network. Proceed to Class B subnetting.
 </p>
