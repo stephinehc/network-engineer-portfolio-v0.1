@@ -144,13 +144,6 @@ If you wish to learn more about subnetting specifically for class C, you make pr
 
 [Class C Subnetting](../class-c/README.md)
 
----
-
-## Resources
-- 📖 [Cisco Networking Academy: Subnetting](https://www.netacad.com/courses/networking)
-- 📘 [RFC 950: Internet Standard Subnetting Procedure](https://www.rfc-editor.org/rfc/rfc950)
-- 🧮 Online Subnet Calculator: [Subnetting Practice Tool](https://www.subnetting.net)
-- 🎥 YouTube: “Subnetting Made Easy” tutorials
 
 ---
 
