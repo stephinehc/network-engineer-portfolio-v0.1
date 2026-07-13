@@ -137,7 +137,7 @@ We can now assign a network to the **Administration Department**. Let us assign 
 
 The remaining subnets will be reserved in case the company wants to expand and in which this design makes the company scalable but take note that these reserve networks can only cater 8,190 hosts/network. <br>
 
-If you wish to learn more about subnetting specifically for class C, you make proceed to Class C Subnetting (click the button below).
+If you wish to learn more about subnetting specifically for class C, you may proceed to Class C Subnetting (click the button below).
 <br>
 
 [Class C Subnetting](../class-c/README.md)
