@@ -152,12 +152,4 @@ Base on the network design we have, I can say that it is poorly designed. So, le
 
 ---
 
-## Resources
-- 📖 [Cisco Networking Academy: Subnetting](https://www.netacad.com/courses/networking)
-- 📘 [RFC 950: Internet Standard Subnetting Procedure](https://www.rfc-editor.org/rfc/rfc950)
-- 🧮 Online Subnet Calculator: [Subnetting Practice Tool](https://www.subnetting.net)
-- 🎥 YouTube: “Subnetting Made Easy” tutorials
-
----
-
 [⬅ Back to Home](../../README.md) · [⬅ Networking Roadmap](../README.md) <br><br> [Next →](../02-lan-technologies/README.md)
