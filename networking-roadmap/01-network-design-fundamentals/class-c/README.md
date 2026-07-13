@@ -122,7 +122,7 @@ Let us now work on with subnetting the 2nd subnet (192.168.0.64/26) base on the 
 - Add the value `32` to the recent modified octet. In our case, the recent modified octet is the 4th octet.
 
 ### 6. Subnet Table
-- The 1st subnet is the provided network IP address (192.168.0.64/26) then we add the block size to the 4th octet.
+- The 1st subnet is the provided network IP address (192.168.0.64/27) then we add the block size to the 4th octet.
 - When working with the subnet table, do TOP to BOTTOM approach starting from the network IP address then broadcast IP address and then lastly, the Range of usable host IPs.
 
 
