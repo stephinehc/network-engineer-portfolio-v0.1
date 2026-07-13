@@ -129,13 +129,14 @@ Let us now work on with subnetting the 2nd subnet (128.0.128.0/17) base on the n
 | 4          | 128.0.**224**.0       | 128.0.224.1 – 128.0.255.254    | 128.0.**255**.255     |
 
 
-We can now assign a network to the **Administration Department**. Let us assign the 1st subnet **128.0.224.0/19**. 
+We can now assign a network to the **Administration Department**. Let us assign the 1st subnet **128.0.128.0/19**. 
 <br>
-<img width="648" height="332" alt="image" src="https://github.com/user-attachments/assets/6bd7d036-a176-4c70-bb37-a445fdb758bc" />
+<img width="664" height="344" alt="image" src="https://github.com/user-attachments/assets/dd6281e1-449d-48d1-b7f7-2fb5af1af34f" />
 
 
 
-The remaining subnets will be reserved in case the company wants to expand and in which this design makes the company scalable but take note that these reserve networks can only cater 8,190 hosts/network. <br>
+
+The remaining subnets (no. 3 and 4) will be reserved in case the company wants to expand and in which this design makes the company scalable but take note that these reserve networks can only cater 8,190 hosts/network. <br>
 
 If you wish to learn more about subnetting specifically for class C, you may proceed to Class C Subnetting (click the button below).
 <br>
