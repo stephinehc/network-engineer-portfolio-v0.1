@@ -25,7 +25,7 @@ We will use the Case B for subnetting (requirement is number of hosts/subnet), i
 - Default subnet mask (SM): `255.255.255.0` or `/24`
 
 ### 2. Identify the Default Subnet Mask
-- Class B → `/16` → `255.255.255.0`
+- Class C → `/24` → `255.255.255.0`
 
 ### 3. Network ID
 - Representation: `N.N.N.H`  
@@ -57,7 +57,7 @@ We will use the Case B for subnetting (requirement is number of hosts/subnet), i
 | Subnet No. | Network IP Address | Range of Usable Host IPs       | Broadcast IP Address | Assignment       |
 |------------|--------------------|--------------------------------|----------------------|------------------|
 | 1          | 192.168.0.0       | 192.168.0.1 – 192.168.0.62   | 192.168.0.63     | Prod1 Department       |
-| 2          | 192.168.0.64       | 192.168.0.65 – 192.168.0.126   | 192.168.0.127     |       |
+| 2          | 192.168.0.64       | 192.168.0.65 – 192.168.0.126   | 192.168.0.127     | Use for VLSM (Prod2 and Prod3)       |
 | 3          | 192.168.0.128       | 192.168.0.129 – 192.168.0.190   | 192.168.0.191     |       |
 | 4          | 192.168.0.192       | 192.168.0.193 – 192.168.0.254   | 192.168.0.255     |       |
 
@@ -72,36 +72,35 @@ The 1st subnet (192.168.0.0/26) will be used for Prod1 department and we will no
 
 
 ### VLSM (Variable Length Subnet Masking)
-Let us now work on with subnetting the 2nd subnet (128.0.128.0/17) base on the number of hosts required (5,000 hosts) for Administration Department.
+Let us now work on with subnetting the 2nd subnet (192.168.0.64/26) base on the number of hosts required (30 hosts) for both Prod2 and Prod3 department. These means we need two networks that has 30 hosts/network.
  
 ### Steps
 
-### 1. Identify the Default Class of the Network IP (128.0.128.0/17)
-- Given IP: Class B (It is not class C since it is not beyond /24)
-- Default subnet mask (SM): `255.255.0.0` or `/16`
+### 1. Identify the Default Class of the Network IP (192.168.0.64/26)
+- Given IP: Class C
+- Default subnet mask (SM): `255.255.255.0` or `/24`
 
 ### 2. Identify the Default Subnet Mask
-- Class B → `/16` → `255.255.0.0`
+- Class C → `/24` → `255.255.255.0`
 
 ### 3. Network ID of the provided Network IP
-- Representation: `N.N.nhhh hhhh.hhhh hhhh`  
-- Binary mask: ![Red](https://img.shields.io/badge/1111%201111.1111%201111.1-red)
-![Blue](https://img.shields.io/badge/000%200000.0000%200000-blue)
-- Host bits available: 15  
-- Requirement: 5,000 hosts (Administration Department)  
+- Representation: `N.N.N.nnhh hhhh`  
+- Binary mask: ![Red](https://img.shields.io/badge/1111%201111.1111%201111.1111%201111.11-red)
+![Blue](https://img.shields.io/badge/00%200000-blue)
+- Host bits available: 6
+- Requirement: 30 hosts (Prod2 and Prod3)  
 - Formula:
   - \(x_h = (2^h - 2)\) ≥ required hosts
-  - Host bits needed: 13 host bits (movement of bits is from RIGHT to LEFT)  
-  - Hosts/subnet: \(x_h = (2^13 - 2)\) = 8,190 usable hosts/subnet
-- Remaining bit(s): Host bits available - Host bits needed = 15 - 13 = 2 (will become network bit `n`)
-  - Subnets: \(2^n = 2^2 = 4\) subnets generated
-- New Binary Mask: ![Red](https://img.shields.io/badge/1111%201111.1111%201111.111-red)
-![Blue](https://img.shields.io/badge/0%200000.0000%200000-blue)
-
+  - Host bits needed: 5 host bits (movement of bits is from RIGHT to LEFT)  
+  - Hosts/subnet: \(x_h = (2^5 - 2)\) = 30 usable hosts/subnet
+- Remaining bit(s): Host bits available - Host bits needed = 6 - 5 = 1 (will become network bit `n`)
+  - Subnets: \(2^n = 2^1 = 2\) subnets generated
+- New Binary Mask: ![Red](https://img.shields.io/badge/1111%201111.1111%201111.1111%201111.111-red)
+![Blue](https://img.shields.io/badge/0%200000-blue)
 ### 4. Customized Subnet Mask
-- New mask: `/17 + 2 = /19`  
+- New mask: `/26 + 1 = /27`  
 - Equivalent: `255.255.224.0`
-- Originally `/16` and there is now 3 new network bits including the first subnetting we performed. We can use the subnet mask reference below to get the equivalent decimal value of the modified octet.
+- Originally `/24` and there is now 3 new network bits including the first subnetting we performed. We can use the subnet mask reference below to get the equivalent decimal value of the modified octet.
 
   ## Subnet Mask Reference
 
@@ -119,34 +118,27 @@ Let us now work on with subnetting the 2nd subnet (128.0.128.0/17) base on the n
 
 ### 5. IP Range
 - Block size: \(256 - 224 = 32\)
-- Add the value `32` to the recent modified octet. In our case, the recent modified octet is the 3rd octet.
+- Add the value `32` to the recent modified octet. In our case, the recent modified octet is the 4th octet.
 
 ### 6. Subnet Table
-- The 1st subnet is the provided network IP address then we add the block size to the 3rd octet.
+- The 1st subnet is the provided network IP address (192.168.0.64/26) then we add the block size to the 4th octet.
 - When working with the subnet table, do TOP to BOTTOM approach starting from the network IP address then broadcast IP address and then lastly, the Range of usable host IPs.
 
-| Subnet No. | Network IP Address | Range of Usable Host IPs       | Broadcast IP Address |
-|------------|--------------------|--------------------------------|----------------------|
-| 1          | 128.0.**128**.0       | 128.0.0.1 – 128.0.159.254      | 128.0.**159**.255     |
-| 2          | 128.0.**160**.0       | 128.0.160.1 – 128.0.191.254    | 128.0.**191**.255     |
-| 3          | 128.0.**192**.0       | 128.0.192.1 – 128.0.223.254    | 128.0.**223**.255     |
-| 4          | 128.0.**224**.0       | 128.0.224.1 – 128.0.255.254    | 128.0.**255**.255     |
 
-To verify if we got the correct subnet table, the recent modified octets of the last network IP address should match with the recent modified octet of the customized subnet mask. In this case: <br>
-Last network IP address:  128.0.**224**.0 <br>
-Customized subnet mask:  255.255.**224**.0 <br>
+| Subnet No. | Network IP Address | Range of Usable Host IPs       | Broadcast IP Address | Assignment       |
+|------------|--------------------|--------------------------------|----------------------|------------------|
+| 1          | **192.168.0.64**       | 192.168.0.65 – 192.168.0.94   | 192.168.0.95     | Prod2 Department       |
+| 2          | 192.168.0.96       | 192.168.0.97 – 192.168.0.126   | **192.168.0.127**     | Prod3 Department       |
+
+
+To verify if we got the correct subnet table, refer to the network IP address (192.168.0.64) and broadcast IP address (192.168.0.127) in the 1st subnet table we have. In the new subnet table above, the 1st network IP address and last broadcast IP address should match with our reference.
 <br>
-We can now assign a network to the **Administration Department**. Let us assign the 1st subnet **128.0.224.0/19**.
-<img width="648" height="332" alt="image" src="https://github.com/user-attachments/assets/6bd7d036-a176-4c70-bb37-a445fdb758bc" />
+We can now assign a network to Prod2 and Prod3.
+<img width="1433" height="572" alt="image" src="https://github.com/user-attachments/assets/59edc806-7c51-41eb-970f-a62679d902d6" />
 
+Since there is no longer available network for the new subnet, we will go back to the first subnet table in which there are two networks that are available: 192.168.0.128/26 and 192.168.0.192/26. We can select any of these two available networks. Let's say we use 192.168.0.128/26.
 
-
-The remaining subnets will be reserved in case the company wants to expand and in which this design makes the company scalable but take note that these reserve networks can only cater 8,190 hosts/network. <br>
-
-If you wish to learn more about subnetting specifically for class C, you make proceed to Class C Subnetting (click the button below).
-<br>
-
-[Class C Subnetting](../class-c/README.md)
+[Class B Subnetting](../class-b/README.md)
 
 ---
 
