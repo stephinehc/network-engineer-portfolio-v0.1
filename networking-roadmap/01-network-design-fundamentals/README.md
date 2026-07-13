@@ -129,7 +129,7 @@ Needs a smaller subnet for office PCs, printers, and internal applications.
 | 1          | 10.**0**.0.0         | 10.0.0.1 – 10.127.255.254      | 10.**127**.255.255     |
 | 2          | 10.**128**.0.0       | 10.128.0.1 – 10.255.255.254    | 10.**255**.255.255     |
 
-## TIP
+### TIP
 If you want to verify if you got the correct subnet table, just check the last network IP address on your table. The block size value should be the value of your recent modified octet. In our case, the last network IP address of our subnet table is **10.128.0.0**, in which our block size value is **128** and is placed to the 2nd octet (the recent modified octet).
 
 ### Assigning the network IP
