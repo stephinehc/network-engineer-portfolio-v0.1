@@ -13,7 +13,7 @@ Requires a large subnet for factory machines, IoT sensors, and production server
 Includes HR, Finance, and Management offices.<br>
 Needs a smaller subnet for office PCs, printers, and internal applications.
 
-<img width="660" height="344" alt="image" src="https://github.com/user-attachments/assets/10b1e2f3-95b5-473a-847d-8b5e0c6e582d" />
+<img width="655" height="333" alt="image" src="https://github.com/user-attachments/assets/f6f5bb9a-fb11-4592-a26e-1d1949e780fd" />
 
 For Case B in subnetting (requirement is number of hosts/subnet), we will work first with the network with the highest number of hosts which is in the network design that is the *Production Department*.
 
@@ -55,8 +55,8 @@ For Case B in subnetting (requirement is number of hosts/subnet), we will work f
 
 | Subnet No. | Network IP Address | Range of Usable Host IPs       | Broadcast IP Address |
 |------------|--------------------|--------------------------------|----------------------|
-| 1          | 10.0.**0**.0         | 10.0.0.1 – 10.0.127.254      | 10.0.**127**.255     |
-| 2          | 10.0.**128**.0       | 10.0.128.1 – 10.0.255.254    | 10.0.**255**.255     |
+| 1          | 128.0.**0**.0         | 128.0.0.1 – 128.0.127.254      | 128.0.**127**.255     |
+| 2          | 128.0.**128**.0       | 128.0.128.1 – 128.0.255.254    | 128.0.**255**.255     |
 
 <p align="justify">
 We will use the 1st subnet for the Production Department and we can use the 2nd subnet for the Administration Department. But if we are to evaluate the number of required hosts for the Administration department, it only requires 5,000 hosts and the 2nd subnet has 32,676 hosts. There are approximately 27,000 hosts wasted. In order to efficiently use the 2nd network, we can subdivide it according to what is required. In which, we are now gonna be working with VLSM (Variable Length Subnet Masking).
@@ -64,14 +64,15 @@ We will use the 1st subnet for the Production Department and we can use the 2nd 
 
 ### Assigning the network IP to Production Department
 
-<img width="664" height="357" alt="image" src="https://github.com/user-attachments/assets/6dd4fe4e-517d-45fc-88b4-2141a5922709" />
+<img width="661" height="337" alt="image" src="https://github.com/user-attachments/assets/b35ccaab-4568-47e4-a49c-c4d1074c5a46" />
+
 
 ### VLSM (Variable Length Subnet Masking)
-Let us now work on with subnetting the 2nd subnet (10.0.128.0/17) base on the number of hosts required (5,000 hosts) for Administration Department.
+Let us now work on with subnetting the 2nd subnet (128.0.128.0/17) base on the number of hosts required (5,000 hosts) for Administration Department.
  
 ### Steps
 
-### 1. Identify the Default Class of the Network IP (10.0.128.0/17)
+### 1. Identify the Default Class of the Network IP (128.0.128.0/17)
 - Given IP: Class B (It is not class C since it is not beyond /24)
 - Default subnet mask (SM): `255.255.0.0` or `/16`
 
@@ -122,17 +123,19 @@ Let us now work on with subnetting the 2nd subnet (10.0.128.0/17) base on the nu
 
 | Subnet No. | Network IP Address | Range of Usable Host IPs       | Broadcast IP Address |
 |------------|--------------------|--------------------------------|----------------------|
-| 1          | 10.0.**128**.0       | 10.0.0.1 – 10.0.159.254      | 10.0.**159**.255     |
-| 2          | 10.0.**160**.0       | 10.0.160.1 – 10.0.191.254    | 10.0.**191**.255     |
-| 3          | 10.0.**192**.0       | 10.0.192.1 – 10.0.223.254    | 10.0.**223**.255     |
-| 4          | 10.0.**224**.0       | 10.0.224.1 – 10.0.255.254    | 10.0.**255**.255     |
+| 1          | 128.0.**128**.0       | 128.0.0.1 – 128.0.159.254      | 128.0.**159**.255     |
+| 2          | 128.0.**160**.0       | 128.0.160.1 – 128.0.191.254    | 128.0.**191**.255     |
+| 3          | 128.0.**192**.0       | 128.0.192.1 – 128.0.223.254    | 128.0.**223**.255     |
+| 4          | 128.0.**224**.0       | 128.0.224.1 – 128.0.255.254    | 128.0.**255**.255     |
 
 To verify if we got the correct subnet table, the recent modified octets of the last network IP address should match with the recent modified octet of the customized subnet mask. In this case: <br>
-Last network IP address:  10.0.**224**.0 <br>
+Last network IP address:  128.0.**224**.0 <br>
 Customized subnet mask:  255.255.**224**.0 <br>
 <br>
-We can now assign a network to the **Administration Department**. Let us assign the 1st subnet **10.0.224.0/19**.
-<img width="652" height="342" alt="image" src="https://github.com/user-attachments/assets/0c6b1c43-6f1f-406c-a5e9-11f5ddc2da23" />
+We can now assign a network to the **Administration Department**. Let us assign the 1st subnet **128.0.224.0/19**.
+<img width="648" height="332" alt="image" src="https://github.com/user-attachments/assets/6bd7d036-a176-4c70-bb37-a445fdb758bc" />
+
+
 
 The remaining subnets will be reserved in case the company wants to expand and in which this design makes the company scalable but take note that these reserve networks can only cater 8,190 hosts/network. <br>
 
