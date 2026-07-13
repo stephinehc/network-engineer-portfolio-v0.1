@@ -109,6 +109,7 @@ Needs a smaller subnet for office PCs, printers, and internal applications.
 ### 6. Subnet Table
 - The 1st subnet is always the original network IP address then we add the block size to the 2nd octet.
 - When working with the subnet table, do TOP to bottom approach starting from the network IP address then broadcast IP address and then lastly, the Range of usable host IPs.
+
 | Subnet No. | Network IP Address | Range of Usable Host IPs       | Broadcast IP Address |
 |------------|--------------------|--------------------------------|----------------------|
 | 1          | 10.**0**.0.0/9         | 10.0.0.1 – 10.127.255.254      | 10.**127**.255.255/9     |
