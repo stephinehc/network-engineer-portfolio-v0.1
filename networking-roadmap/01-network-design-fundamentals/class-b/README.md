@@ -128,10 +128,7 @@ Let us now work on with subnetting the 2nd subnet (128.0.128.0/17) base on the n
 | 3          | 128.0.**192**.0       | 128.0.192.1 – 128.0.223.254    | 128.0.**223**.255     |
 | 4          | 128.0.**224**.0       | 128.0.224.1 – 128.0.255.254    | 128.0.**255**.255     |
 
-To verify if we got the correct subnet table, the recent modified octets of the last network IP address should match with the recent modified octet of the customized subnet mask. In this case: <br>
-Last network IP address:  128.0.**224**.0 <br>
-Customized subnet mask:  255.255.**224**.0 <br>
-<br>
+
 We can now assign a network to the **Administration Department**. Let us assign the 1st subnet **128.0.224.0/19**.
 <img width="648" height="332" alt="image" src="https://github.com/user-attachments/assets/6bd7d036-a176-4c70-bb37-a445fdb758bc" />
 
