@@ -6,7 +6,7 @@
 They have expanded and needs separate networks:
 
 **Production Department**<br>
-It has now subdivided: Prod1, Prod2, and Prod3 <br>
+It has now expanded to Prod1, Prod2, and Prod3. <br>
 Handles manufacturing of school supplies and tech devices.<br>
 Requires a large subnet for factory machines, IoT sensors, and production servers.
 
