@@ -42,7 +42,7 @@ This section introduces the foundational concepts of IP addressing, subnetting, 
     - **Case A**: If requirement is number of Networks (Movement of bits is from Left to Right)
     - **Case B**: If requirement is number of Hosts/Subnet (Movement of bits is from Right to Left)
    
-### CIDR Notation (Classless Inter-Domain Routing)
+### CIDR (Classless Inter-Domain Routing)
   - A method that no longer follow the class-based addressing
   - Example: 10.0.0.0/16 (notice that the IPv4 address 10.0.0.0 belongs to class A but the prefix (/16) belongs to class B)
 <br>
