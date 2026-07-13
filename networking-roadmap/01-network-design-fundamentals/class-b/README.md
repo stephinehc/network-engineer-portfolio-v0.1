@@ -129,7 +129,7 @@ Let us now work on with subnetting the 2nd subnet (128.0.128.0/17) base on the n
 | 4          | 128.0.**224**.0       | 128.0.224.1 – 128.0.255.254    | 128.0.**255**.255     |
 
 
-We can now assign a network to the **Administration Department**. Let us assign the 1st subnet **128.0.224.0/19**.
+We can now assign a network to the **Administration Department**. Let us assign the 1st subnet **128.0.224.0/19**. <br>
 <img width="648" height="332" alt="image" src="https://github.com/user-attachments/assets/6bd7d036-a176-4c70-bb37-a445fdb758bc" />
 
 
