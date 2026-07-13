@@ -26,7 +26,7 @@ This section introduces the foundational concepts of IP addressing, subnetting, 
 ## Notes & Diagrams
 - **Requirement**
   - Background about converting Decimal Number to Binary Number and vice versa.
-  ### IP Address Classes
+### IP Address Classes
 
 | Class | Starting Address | Ending Address | Default Subnet Mask | Notes |
 |-------|------------------|----------------|---------------------|-------|
