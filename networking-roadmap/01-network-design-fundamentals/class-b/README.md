@@ -99,7 +99,7 @@ Let us now work on with subnetting the 2nd subnet (128.0.128.0/17) base on the n
 - Equivalent: `255.255.224.0`
 - Originally `/16` and there is now 3 new network bits including the first subnetting we performed. We can use the subnet mask reference below to get the equivalent decimal value of the modified octet.
 
-  ## Subnet Mask Reference
+  ### Subnet Mask Reference
 
   | No. of Network Bits in an Octet | Equivalent Decimal Value |
   |----------------------|--------------------------|
