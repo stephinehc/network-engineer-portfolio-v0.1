@@ -15,7 +15,7 @@ Needs a smaller subnet for office PCs, printers, and internal applications.
 
 <img width="660" height="344" alt="image" src="https://github.com/user-attachments/assets/10b1e2f3-95b5-473a-847d-8b5e0c6e582d" />
 
-For Case B in subnetting (requirement is number of hosts/subnet), we will work first with the network with the highest number of hosts which is in the network design that is the **Production Department*.
+For Case B in subnetting (requirement is number of hosts/subnet), we will work first with the network with the highest number of hosts which is in the network design that is the *Production Department*.
 
 ### Steps
 
