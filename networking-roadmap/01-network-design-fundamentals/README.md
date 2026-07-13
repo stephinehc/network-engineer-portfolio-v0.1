@@ -52,6 +52,18 @@ This section introduces the foundational concepts of IP addressing, subnetting, 
 ### 4. Customized Subnet Mask
 - Borrow bits from the host portion to create subnets.
 - Example: `255.255.255.192` (borrowed 2 bits from Class C)
+  ## Subnet Mask Reference
+
+| No. of Network Bits in an Octet | Equivalent Decimal Value |
+|----------------------|--------------------------|
+| 1                    | 128                      |
+| 2                    | 192                      |
+| 3                    | 224                      |
+| 4                    | 240                      |
+| 5                    | 248                      |
+| 6                    | 252                      |
+| 7                    | 254                      |
+| 8                    | 255                      |
 
 ### 5. IP Range
 - Calculate the valid host range for each subnet.
