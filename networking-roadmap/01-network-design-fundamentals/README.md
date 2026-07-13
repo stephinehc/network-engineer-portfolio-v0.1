@@ -33,6 +33,7 @@ An IPv4 address is composed of 32 bits and is divided into four octets. It is re
 A subnet mask determines which octets belong to the network portion and host portion. </p><br>
 Example:<br>
 192.168.30.1/24<br>
+
 The prefix /24 represents the number of network bits (starting from the 1st octet going to the right). The
 /24 means 1111 1111.1111 1111.1111 1111.0000 0000 in binary. If converted in decimal, 255.255.255.0 which is called the subnet mask. Those binary `1` are the network bits while the binary `0` are the host bits. This means that the 1st to 3rd octets belong to the network portion and the 4th octet belongs to the host portion.
 <br> <br>
