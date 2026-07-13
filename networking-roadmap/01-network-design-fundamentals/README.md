@@ -121,7 +121,7 @@ Always consider the best network design and not just use a random network IP cla
 Base on the network design we have, I can say that it is poorly designed. So, let us go ahead and correct it. Take note that our goal for now is to have a scalable network. Proceed to Class B subnetting.
 </p>
 
-[Class B Subnetting](../class-b/README.md)
+[Class B Subnetting](../01-network-design-fundamentals/class-b/README.md)
 
 ---
 
