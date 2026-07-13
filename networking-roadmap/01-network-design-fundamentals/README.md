@@ -27,6 +27,8 @@ This section introduces the foundational concepts of IP addressing, subnetting, 
 - **Requirement**
   - Background about converting Decimal Number to Binary Number and vice versa.
 - **Subnetting**
+  - Subdividing a single network into multiple networks by borrowing some bits from the host portion and making it as a part of the network portion.
+    ### Two ways in performing Subnetting
   - **Case A**: If requirement is number of Networks (Movement of bits is from Left to Right)
   - **Case B**: If requirement is number of Hosts/Subnet (Movement of bits is from Right to Left)
 
