@@ -84,8 +84,8 @@ Needs a smaller subnet for office PCs, printers, and internal applications.
 
 ### 3. Network ID
 - Representation: `N.H.H.H`  
-- Binary mask: ![Red](https://img.shields.io/badge/1111%201111.-red)
-![Blue](https://img.shields.io/badge/0000%200000.0000%200000.0000%200000-blue)
+- Binary mask: ![Red](https://img.shields.io/badge/1111%201111-red)
+![Blue](https://img.shields.io/badge/.0000%200000.0000%200000.0000%200000-blue)
 - Host bits available: 24  
 - Requirement: At least 2 subnets (Production and Administration)  
 - Formula: \(x_s = 2^n\)  
