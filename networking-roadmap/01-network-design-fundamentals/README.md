@@ -94,8 +94,7 @@ Needs a smaller subnet for office PCs, printers, and internal applications.
 ### Steps
 
 ### 1. Identify the Default Class of the Network IP
-- Given IP: Class A  
-- Default subnet mask (SM): `255.0.0.0` or `/8`
+- Given IP: Class A 
 
 ### 2. Identify the Default Subnet Mask
 - Class A → `/8` → `255.0.0.0`
