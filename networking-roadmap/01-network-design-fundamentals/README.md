@@ -34,11 +34,10 @@ A subnet mask determines which octets belong to the network portion and host por
 Example:<br>
 192.168.30.1/24<br>
 
-<div style="text-align: justify;">
 
-The prefix /24 represents the number of network bits (starting from the 1st octet going to the right). The /24 means 1111 1111.1111 1111.1111 1111.0000 0000 in binary. If converted in decimal, 255.255.255.0 which is called the subnet mask. Those binary <code style="color: #d63384; font-weight: bold;">1</code> are the network bits while the binary <code style="color: #d63384; font-weight: bold;">0</code> are the host bits. This means that the 1st to 3rd octets belong to the network portion and the 4th octet belongs to the host portion.
-
-</div>
+<p align="justify">
+The prefix /24 represents the number of network bits (starting from the 1st octet going to the right). The /24 means 1111 1111.1111 1111.1111 1111.0000 0000 in binary. If converted in decimal, 255.255.255.0 which is called the subnet mask. Those binary <strong>`1`</strong> are the network bits while the binary <strong>`0`</strong> are the host bits. This means that the 1st to 3rd octets belong to the network portion and the 4th octet belongs to the host portion.
+</p>
 
 
 <br> <br>
