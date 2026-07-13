@@ -24,7 +24,6 @@ We will use the Case B for subnetting (requirement is number of hosts/subnet), i
 
 ### 1. Identify the Default Class of the Network IP
 - Given IP: Class C  
-- Default subnet mask (SM): `255.255.255.0` or `/24`
 
 ### 2. Identify the Default Subnet Mask
 - Class C → `/24` → `255.255.255.0`
@@ -81,7 +80,6 @@ Let us now work on with subnetting the 2nd subnet (192.168.0.64/26) base on the 
 
 ### 1. Identify the Default Class of the Network IP (192.168.0.64/26)
 - Given IP: Class C
-- Default subnet mask (SM): `255.255.255.0` or `/24`
 
 ### 2. Identify the Default Subnet Mask
 - Class C → `/24` → `255.255.255.0`
@@ -141,13 +139,12 @@ We can now assign a network to Prod2 and Prod3.
 
 ---
 ### For Administration Department
-Since there is no longer available network for the new subnet, we will go back to the first subnet table in which there are two networks that are available: 192.168.0.128/26 and 192.168.0.192/26. We can select any of these two available networks. Let's say we use 192.168.0.128/26.
+Since there is no longer available network (from the subnet of Prod2 and Prod3), we will go back to the Prod1 subnet table in which there are two networks that are available: 192.168.0.128/26 and 192.168.0.192/26. We can select any of these two available networks. Let's say we use 192.168.0.128/26.
 
 ### Steps
 
 ### 1. Identify the Default Class of the Network IP (192.168.0.128/26)
 - Given IP: Class C
-- Default subnet mask (SM): `255.255.255.0` or `/24`
 
 ### 2. Identify the Default Subnet Mask
 - Class C → `/24` → `255.255.255.0`
@@ -205,13 +202,6 @@ Since there is no longer available network for the new subnet, we will go back t
 
 [Class B Subnetting](../class-b/README.md)
 
----
-
-## Resources
-- 📖 [Cisco Networking Academy: Subnetting](https://www.netacad.com/courses/networking)
-- 📘 [RFC 950: Internet Standard Subnetting Procedure](https://www.rfc-editor.org/rfc/rfc950)
-- 🧮 Online Subnet Calculator: [Subnetting Practice Tool](https://www.subnetting.net)
-- 🎥 YouTube: “Subnetting Made Easy” tutorials
 
 ---
 
