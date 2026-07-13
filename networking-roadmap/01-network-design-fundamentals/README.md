@@ -52,7 +52,7 @@ This section introduces the foundational concepts of IP addressing, subnetting, 
 ### 4. Customized Subnet Mask
 - Borrow bits from the host portion to create subnets.
 - Example: `255.255.255.192` (borrowed 2 bits from Class C)
-  ## Subnet Mask Reference
+  ### Subnet Mask Reference
 
   | No. of Network Bits in an Octet | Equivalent Decimal Value |
   |----------------------|--------------------------|
