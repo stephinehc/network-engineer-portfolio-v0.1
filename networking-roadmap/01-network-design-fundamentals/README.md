@@ -26,7 +26,18 @@ This section introduces the foundational concepts of IP addressing, subnetting, 
 ## Notes & Diagrams
 - **Requirement**
   - Background about converting Decimal Number to Binary Number and vice versa.
-### IP Address Classes
+
+### IPv4 Address Stucture and Subnet Mask
+An IPv4 address is composed of 32 bits and is divided into four octets. It is represented in decimal number system format. <br> <br>
+A subnet mask determines which octets belong to the network portion and host portion. <br>
+Example:<br>
+192.168.30.1/24<br>
+The prefix /24 represents the number of network bits (starting from the 1st octet going to the right). The
+/24 means 1111 1111.1111 1111.1111 1111.0000 0000 in binary. If converted, 255.255.255.0 which is called the subnet mask. Those binary `1` are the network bits while the binary `0` are the host bits.
+<br> <br>
+To determine the network IP address, we use the boolean logic AND. We call it the AND-ing process. AND-ing the binary values of the IP adress and subnet mask.
+
+### IPv4 Address Classes
 
 | Class | Starting Address | Ending Address | Default Subnet Mask | Notes |
 |-------|------------------|----------------|---------------------|-------|
