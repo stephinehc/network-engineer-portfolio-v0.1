@@ -26,11 +26,26 @@ This section introduces the foundational concepts of IP addressing, subnetting, 
 ## Notes & Diagrams
 - **Requirement**
   - Background about converting Decimal Number to Binary Number and vice versa.
+  ### IP Address Classes
+
+| Class | Starting Address | Ending Address | Default Subnet Mask | Notes |
+|-------|------------------|----------------|---------------------|-------|
+| A     | 0.0.0.0          | 127.255.255.255| 255.0.0.0 or /8           | Designed for very large networks |
+| B     | 128.0.0.0        | 191.255.255.255| 255.255.0.0 or /16         | Medium-sized networks |
+| C     | 192.0.0.0        | 223.255.255.255| 255.255.255.0 or /24       | Small networks |
+| D     | 224.0.0.0        | 239.255.255.255| N/A                 | Reserved for multicast |
+| E     | 240.0.0.0        | 255.255.255.255| N/A                 | Reserved for experimental use |
+
   ### Subnetting
   - Subdividing a single network into multiple networks by borrowing some bits from the host portion and making it as a part of the network portion. <br><br>
   Two ways in performing Subnetting
     - **Case A**: If requirement is number of Networks (Movement of bits is from Left to Right)
     - **Case B**: If requirement is number of Hosts/Subnet (Movement of bits is from Right to Left)
+   
+### CIDR Notation (Classless Inter-Domain Routing)
+  - A method that no longer follow the class-based addressing
+  - Example: 10.0.0.0/16 (notice that the IPv4 address 10.0.0.0 belongs to class A but the prefix (/16) belongs to class B)
+<br>
 
 ## 5 Easy Steps in Doing Subnetting
 ### 1. Identify the Default Class of the Network IP
