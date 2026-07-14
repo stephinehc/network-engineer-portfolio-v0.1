@@ -32,7 +32,8 @@ A **Virtual Local Area Network (VLAN)** is a logical grouping of devices within 
 
 ### Create VLANs
 
-<img width="1219" height="499" alt="image" src="https://github.com/user-attachments/assets/bcf9e64e-b1bf-439d-824f-229f3807eb7c" />
+<img width="1216" height="495" alt="image" src="https://github.com/user-attachments/assets/d2cc4edb-6520-4e7a-96b9-03c782a39fde" />
+
 
 
 <br>
@@ -164,7 +165,8 @@ Instead of using separate cables for every VLAN, a single trunk cable carries tr
 
 ### Example Topology
 
-<img width="1219" height="499" alt="image" src="https://github.com/user-attachments/assets/bcf9e64e-b1bf-439d-824f-229f3807eb7c" />
+<img width="1216" height="495" alt="image" src="https://github.com/user-attachments/assets/90a8f4de-0b50-4c01-9cc6-9ebc82868799" />
+
 
 ### Configure a Trunk Port
 
@@ -261,7 +263,7 @@ A **Router-on-a-Stick (ROAS)** uses one physical router interface connected to a
 
 ## Topology
 
-<img width="1219" height="499" alt="image" src="https://github.com/user-attachments/assets/bcf9e64e-b1bf-439d-824f-229f3807eb7c" />
+<img width="1216" height="495" alt="image" src="https://github.com/user-attachments/assets/afe0a32a-1571-40d7-9b6f-9e6d0505fa08" />
 
 
 ### Switch Configuration
@@ -284,8 +286,16 @@ interface GigabitEthernet0/1.20
 
 interface GigabitEthernet0/1.100
  encapsulation dot1Q 100
- ip address 128.0.0.1 255.255.255.0
+ ip address 128.0.160.1 255.255.224.0
 ```
+Activate the interface g0/1
+```bash
+interface GigabitEthernet0/1
+ no shutdown
+```
+<img width="897" height="756" alt="image" src="https://github.com/user-attachments/assets/5df82cfb-6408-479a-bbba-326f85381863" />
+
+
 
 ### Advantages
 
