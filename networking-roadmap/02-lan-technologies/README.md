@@ -440,5 +440,11 @@ These commands help verify:
 
 ---
 
+## Resources
+- 📖 [Cisco Networking Academy: CCNA: Switching, Routing, and Wireless Essentials](https://www.netacad.com/courses/ccna-switching-routing-wireless-essentials?courseLang=en-US)
+- 🧩 Cisco Packet Tracer
+
+---
+
 
 [⬅ Back to Home](../../README.md) · [⬅ Networking Roadmap](../README.md) <br><br> [← Previous](../01-network-design-fundamentals/README.md) · [Next →](../03-switching-technologies/README.md)
