@@ -32,7 +32,8 @@ A **Virtual Local Area Network (VLAN)** is a logical grouping of devices within 
 
 ### Create VLANs
 
-<img width="1216" height="526" alt="image" src="https://github.com/user-attachments/assets/68a179f6-e8c0-4ff8-808b-dd288a01feb9" />
+<img width="1219" height="499" alt="image" src="https://github.com/user-attachments/assets/bcf9e64e-b1bf-439d-824f-229f3807eb7c" />
+
 
 <br>
 
@@ -69,21 +70,22 @@ IP address assignment on S1
 
 ```bash
 Switch(config)# interface vlan 100
-Switch(config-if)# ip address 128.0.0.254 255.255.0.0
+Switch(config-if)# ip address 128.0.160.254 255.255.224.0
 Switch(config-if)# no shutdown
 ```
 
-<img width="758" height="363" alt="image" src="https://github.com/user-attachments/assets/6f3033c8-3a31-4c21-a1d6-6f0fd86f81d3" />
+<img width="757" height="364" alt="image" src="https://github.com/user-attachments/assets/d620eb9b-a7fd-49c5-b08d-27616c267349" />
+
 
 <br>
 IP address assignment on S2
 
 ```bash
 Switch(config)# interface vlan 100
-Switch(config-if)# ip address 128.0.0.253 255.255.0.0
+Switch(config-if)# ip address 128.0.160.253 255.255.224.0
 Switch(config-if)# no shutdown
 ```
-<img width="755" height="367" alt="image" src="https://github.com/user-attachments/assets/e7284454-e7c0-4d38-b238-288e27b92a4f" />
+<img width="755" height="365" alt="image" src="https://github.com/user-attachments/assets/894aadd9-17fb-4c36-b211-ffd04bfdf312" />
 
 
 
@@ -162,8 +164,7 @@ Instead of using separate cables for every VLAN, a single trunk cable carries tr
 
 ### Example Topology
 
-<img width="846" height="515" alt="image" src="https://github.com/user-attachments/assets/c389a7f4-0796-4c85-a3f1-646696bef02d" />
-
+<img width="1219" height="499" alt="image" src="https://github.com/user-attachments/assets/bcf9e64e-b1bf-439d-824f-229f3807eb7c" />
 
 ### Configure a Trunk Port
 
@@ -260,7 +261,7 @@ A **Router-on-a-Stick (ROAS)** uses one physical router interface connected to a
 
 ## Topology
 
-<img width="846" height="515" alt="image" src="https://github.com/user-attachments/assets/90074f76-9819-4d50-99a5-42bb5bb78b33" />
+<img width="1219" height="499" alt="image" src="https://github.com/user-attachments/assets/bcf9e64e-b1bf-439d-824f-229f3807eb7c" />
 
 
 ### Switch Configuration
