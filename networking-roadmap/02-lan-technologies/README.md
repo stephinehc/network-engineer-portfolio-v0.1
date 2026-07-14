@@ -57,7 +57,8 @@ Switch(config)# interface vlan 100
 ```
 <img width="954" height="710" alt="image" src="https://github.com/user-attachments/assets/9db68f28-c946-4211-8503-580870f6927d" />
 
-Assign an IP address to a VLAN <br>
+<br>
+**Assign an IP address to a VLAN** <br><br>
 We assign an ip address to an SVI for management purposes such as for remote access. The IP address will serve as a default gateway for access. <br> <br>
 Base on the design, VLAN 100 has an assigned IP address which is for S1: 128.0.0.254/16 and S2: 128.0.0.253/16. <br>
 IP address assignment on S1
@@ -70,6 +71,7 @@ Switch(config-if)# no shutdown
 
 <img width="758" height="363" alt="image" src="https://github.com/user-attachments/assets/6f3033c8-3a31-4c21-a1d6-6f0fd86f81d3" />
 
+<br>
 IP address assignment on S2
 
 ```bash
