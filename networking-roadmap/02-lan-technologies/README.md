@@ -60,18 +60,30 @@ Switch(config)# interface vlan 100
 
 
 ### Assign a Port to a VLAN
+Base on the example topology we have, the following ports (f0/22, f0/23, f0/24) for S1 will be access ports and on S2 (f0/22, f0/23, f0/24) will be access ports too. Assign each port to their assigned VLAN.
 
 ```bash
-Switch(config)# interface GigabitEthernet0/1
+Switch(config)# interface f0/22
 Switch(config-if)# switchport mode access
 Switch(config-if)# switchport access vlan 10
+
+Switch(config)# interface f0/23
+Switch(config-if)# switchport mode access
+Switch(config-if)# switchport access vlan 10
+
+Switch(config)# interface f0/24
+Switch(config-if)# switchport mode access
+Switch(config-if)# switchport access vlan 20
 ```
+<img width="620" height="485" alt="image" src="https://github.com/user-attachments/assets/224c04d0-0863-471a-9313-f44d26d31507" />
+
 
 ### Verify VLANs
 
 ```bash
 Switch# show vlan brief
 ```
+<img width="760" height="363" alt="image" src="https://github.com/user-attachments/assets/b79f32a7-9a6b-4c0e-b12f-c23fb5160046" />
 
 ---
 
