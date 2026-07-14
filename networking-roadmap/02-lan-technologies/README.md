@@ -363,7 +363,7 @@ interface f0/24
  switchport mode access
  switchport access vlan 20
 ```
-Fully configure Layer 3 Switch Routing
+Fully configured Layer 3 Switch Routing
 <img width="1153" height="688" alt="image" src="https://github.com/user-attachments/assets/f9e4853c-11dd-4095-8149-bede0226af25" />
 See the lower right corner of the photo where PC-A is now able to ping PC-D, PC-B, PC-C, PC-E, and PC-F.
 
