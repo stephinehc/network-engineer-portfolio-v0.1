@@ -120,8 +120,26 @@ Bridge ID: 32868.0060.FFBC.AAB5
 
 S1 becomes the root bridge since it has the lowest value in terms of MAC address.
 ```
+### Indentifying the Root Bridge
+Enter the command on each switch.
+```bash
+Switch# show spanning-tree
+```
+Check the information under the Root ID and locate the MAC address on each of the following switches.
 
-Configure a switch as the Root Bridge:
+Base on the information of the three switches below:
+
+Root ID for both VLAN 10 and VLAN 20 is 32788.0060.3EC4.7B9D
+
+S1 Bridge ID for both VLAN 10 and VLAN 20 is 32788.00D0.BCCD.00E0
+<img width="666" height="654" alt="image" src="https://github.com/user-attachments/assets/52689464-fe7d-4fbf-8651-ff9b963f15b4" />
+S2 Bridge ID for both VLAN 10 and VLAN 20 is 32788.00D0.FFBC.AAB5
+<img width="690" height="686" alt="image" src="https://github.com/user-attachments/assets/53104ed8-3e8d-40f6-ae40-4cf95ce768e1" />
+S3 Bridge ID for both VLAN 10 and VLAN 20 is 32788.0060.3EC4.7B9D
+<img width="665" height="605" alt="image" src="https://github.com/user-attachments/assets/a5173acb-a2c0-420c-8ffa-fb92333fc641" />
+**Therefore the Root Bridge is S3 base on the information of the ROOT ID.**
+
+### Configure a switch as the Root Bridge:
 
 ```bash
 Switch(config)# spanning-tree vlan 10 priority 4096
