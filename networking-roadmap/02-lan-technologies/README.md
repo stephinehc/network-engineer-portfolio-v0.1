@@ -295,7 +295,7 @@ interface GigabitEthernet0/1
 ```
 <img width="897" height="756" alt="image" src="https://github.com/user-attachments/assets/5df82cfb-6408-479a-bbba-326f85381863" />
 
-After the configuring the switches, router, and PC's, all devices should now be able to ping each other.
+After configuring the switches, router, and PC's, all devices should now be able to ping each other.
 <img width="1299" height="697" alt="image" src="https://github.com/user-attachments/assets/c6c4e615-0f3f-499b-83e1-d5806373600b" />
 See the lower right corner of the photo where PC-D is now able to ping PC-A, PC-B, PC-C, PC-E, and PC-F.
 
@@ -316,32 +316,56 @@ See the lower right corner of the photo where PC-D is now able to ping PC-A, PC-
 # 2. Layer 3 Switch Routing
 
 A Layer 3 switch performs routing internally using **Switch Virtual Interfaces (SVIs)**, eliminating the need for an external router.
+<img width="836" height="454" alt="image" src="https://github.com/user-attachments/assets/ff735d92-3cf1-48ee-a9d3-5c7542c7829c" />
 
-### Enable Routing
+### Enable Routing (L3 Switch)
 
 ```bash
 Switch(config)# ip routing
 ```
 
-### Configure SVIs
-
+### Configure SVIs 
+For L3 Switch (1)
 ```bash
+vlan 10
+ name Sales
 interface vlan 10
- ip address 192.168.10.1 255.255.255.0
+ ip address 128.0.0.1 255.255.128.0
  no shutdown
 
+vlan 20
+ name Billing
 interface vlan 20
- ip address 192.168.20.1 255.255.255.0
+ ip address 128.0.128.1 255.255.224.0
+ no shutdown
+
+vlan 100
+ name Management
+interface vlan 100
+ ip address 128.0.160.1 255.255.224.0
  no shutdown
 ```
+Configure trunk link of S1 (g0/1) and S2 (g0/1)
+```bash
+interface g0/1
+ switchport mode trunk
+```
+For L2 Switch (S2), create and activate the SVIs (vlan 10, 20, and 100) and assign access ports.
 
 ### Assign Access Ports
 
 ```bash
-interface GigabitEthernet0/1
+interface range f0/22-23
  switchport mode access
  switchport access vlan 10
+
+interface f0/24
+ switchport mode access
+ switchport access vlan 20
 ```
+Fully configure Layer 3 Switch Routing
+<img width="1153" height="688" alt="image" src="https://github.com/user-attachments/assets/f9e4853c-11dd-4095-8149-bede0226af25" />
+See the lower right corner of the photo where PC-A is now able to ping PC-D, PC-B, PC-C, PC-E, and PC-F.
 
 ### Advantages
 
