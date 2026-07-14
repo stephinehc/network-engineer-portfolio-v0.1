@@ -230,12 +230,21 @@ VLAN 1
 ```
 
 ### Configure the Native VLAN
-
+On the topology we have, we will change our default native vlan (vlan 1) to vlan 100 for security purposes. On both switches (S1 and S2), access the trunk interfaces and change the native vlan using the command below:
 ```bash
-Switch(config-if)# switchport trunk native vlan 99
+Switch(config-if)# switchport trunk native vlan 100
 ```
+<img width="756" height="370" alt="image" src="https://github.com/user-attachments/assets/3eca3418-a031-4d4c-95d1-fa4435b38784" />
 
+The notification "Native VLAN mismatch" indicates that the other trunk interface is not yet on the same native VLAN.
+<br>
 > **Important:** Both ends of the trunk must use the same Native VLAN to avoid connectivity issues and security risks.
+
+To verify that the native VLAN is moved to VLAN 100, enter the command:
+```bash
+Switch# show interfaces trunk
+```
+<img width="756" height="370" alt="image" src="https://github.com/user-attachments/assets/5f70d9b2-27e2-47ca-a155-836faa2ca985" />
 
 ---
 
