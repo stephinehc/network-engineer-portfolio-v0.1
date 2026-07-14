@@ -8,6 +8,7 @@
 <p align="justify">
 This section covers the essential LAN technologies that enable segmentation, scalability, and efficient communication within enterprise networks. Virtual LANs (VLANs) provide logical separation of devices, trunking allows multiple VLANs to traverse a single link, and inter-VLAN routing ensures communication between VLANs. These concepts are foundational for secure and organized campus networks.
 </p>
+
 ---
 
 ## Topics Covered
