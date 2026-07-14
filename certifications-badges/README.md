@@ -58,6 +58,11 @@ Below are the certifications and digital badges I have earned, grouped by catego
     <td><a href="https://www.credly.com/badges/9bbdb0d4-6cd3-4ce3-8430-9bb1aeaa99a5" target="_blank">Verify</a></td>
   </tr>
   <tr>
+    <td><img src="../certifications-badges/badges/ccna-ensa.png.png" alt="CCNA ENSA" width="60"/></td>
+    <td>CCNA: Enterprise, Network, Security, and Automation</td>
+    <td><a href="https://www.credly.com/badges/647c5c4a-4d8d-4d36-9688-8fbccd9c5732" target="_blank">Verify</a></td>
+  </tr>
+  <tr>
     <td><img src="../certifications-badges/badges/networking-basics.png" alt="Networking Basics" width="60"/></td>
     <td>Networking Basics</td>
     <td><a href="https://www.credly.com/badges/75588756-a465-44c6-a442-1c7c6c2cbd3c" target="_blank">Verify</a></td>
