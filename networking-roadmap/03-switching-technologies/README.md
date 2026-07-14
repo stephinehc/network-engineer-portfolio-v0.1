@@ -8,6 +8,7 @@
 <p align="justify">
 This section explores the switching technologies that ensure redundancy, loop prevention, and efficient use of bandwidth in enterprise LANs. Spanning Tree Protocol (STP) prevents broadcast storms caused by loops, while EtherChannel aggregates multiple physical links into one logical channel for higher throughput and fault tolerance.
 </p>
+
 ---
 
 ## Topics Covered
