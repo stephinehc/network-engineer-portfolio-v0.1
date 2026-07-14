@@ -182,4 +182,10 @@ Base on the network design we have, I can say that it is poorly designed. So, le
 
 ---
 
+## Resources
+- 📖 [Cisco Networking Academy: CCNA: Introduction to Networks](https://www.netacad.com/courses/ccna-introduction-networks?courseLang=en-US)
+- 🧩 Cisco Packet Tracer
+
+---
+
 [⬅ Back to Home](../../README.md) · [⬅ Networking Roadmap](../README.md) <br><br> [Next →](../02-lan-technologies/README.md)
