@@ -67,6 +67,7 @@ Switch(config)# interface vlan 100
 Switch(config-if)# ip address 128.0.0.254 255.255.0.0
 Switch(config-if)# no shutdown
 ```
+
 <img width="758" height="363" alt="image" src="https://github.com/user-attachments/assets/6f3033c8-3a31-4c21-a1d6-6f0fd86f81d3" />
 
 IP address assignment on S2
