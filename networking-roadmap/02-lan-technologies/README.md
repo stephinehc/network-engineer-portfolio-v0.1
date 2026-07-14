@@ -55,8 +55,29 @@ Switch(config)# interface vlan 10
 Switch(config)# interface vlan 20
 Switch(config)# interface vlan 100
 ```
-
 <img width="954" height="710" alt="image" src="https://github.com/user-attachments/assets/9db68f28-c946-4211-8503-580870f6927d" />
+
+Assign an IP address to a VLAN <br>
+We assign an ip address to an SVI for management purposes such as for remote access. The IP address will serve as a default gateway for access. <br> <br>
+Base on the design, VLAN 100 has an assigned IP address which is for S1: 128.0.0.254/16 and S2: 128.0.0.253/16. <br>
+IP address assignment on S1
+
+```bash
+Switch(config)# interface vlan 100
+Switch(config-if)# ip address 128.0.0.254 255.255.0.0
+Switch(config-if)# no shutdown
+```
+<img width="758" height="363" alt="image" src="https://github.com/user-attachments/assets/6f3033c8-3a31-4c21-a1d6-6f0fd86f81d3" />
+
+IP address assignment on S2
+
+```bash
+Switch(config)# interface vlan 100
+Switch(config-if)# ip address 128.0.0.253 255.255.0.0
+Switch(config-if)# no shutdown
+```
+<img width="755" height="367" alt="image" src="https://github.com/user-attachments/assets/e7284454-e7c0-4d38-b238-288e27b92a4f" />
+
 
 
 ### Assign a Port to a VLAN
@@ -84,6 +105,9 @@ Switch(config-if)# switchport access vlan 20
 Switch# show vlan brief
 ```
 <img width="760" height="363" alt="image" src="https://github.com/user-attachments/assets/b79f32a7-9a6b-4c0e-b12f-c23fb5160046" />
+
+<br>
+We can now see that the ports f0/22, f0/23, and f0/24 are now moved to their assigned VLANs.
 
 ---
 
