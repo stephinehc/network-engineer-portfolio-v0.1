@@ -34,6 +34,8 @@ A **Virtual Local Area Network (VLAN)** is a logical grouping of devices within 
 
 <img width="1216" height="526" alt="image" src="https://github.com/user-attachments/assets/68a179f6-e8c0-4ff8-808b-dd288a01feb9" />
 
+<br>
+
 On both switches, enter the following commands: <br>
 S1 and S2
 
@@ -58,7 +60,9 @@ Switch(config)# interface vlan 100
 <img width="954" height="710" alt="image" src="https://github.com/user-attachments/assets/9db68f28-c946-4211-8503-580870f6927d" />
 
 <br>
-**Assign an IP address to a VLAN** <br><br>
+
+**Assign an IP address to a VLAN** 
+<br><br>
 We assign an ip address to an SVI for management purposes such as for remote access. The IP address will serve as a default gateway for access. <br> <br>
 Base on the design, VLAN 100 has an assigned IP address which is for S1: 128.0.0.254/16 and S2: 128.0.0.253/16. <br>
 IP address assignment on S1
