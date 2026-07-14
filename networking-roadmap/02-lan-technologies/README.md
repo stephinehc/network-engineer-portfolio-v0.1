@@ -295,7 +295,9 @@ interface GigabitEthernet0/1
 ```
 <img width="897" height="756" alt="image" src="https://github.com/user-attachments/assets/5df82cfb-6408-479a-bbba-326f85381863" />
 
-
+After the configuring the switches, router, and PC's, all devices should now be able to ping each other.
+<img width="1299" height="697" alt="image" src="https://github.com/user-attachments/assets/c6c4e615-0f3f-499b-83e1-d5806373600b" />
+See the lower right corner of the photo where PC-D is now able to ping PC-A, PC-B, PC-C, PC-E, and PC-F.
 
 ### Advantages
 
