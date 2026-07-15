@@ -20,10 +20,11 @@ Example:
 
 <img width="819" height="283" alt="image" src="https://github.com/user-attachments/assets/b18f7ac5-0313-4b33-8d82-0f42a4403523" />
 
-We implement subnetting in the given design.
-<img width="862" height="342" alt="image" src="https://github.com/user-attachments/assets/4acb5cf2-f1c4-460d-a0f2-a360d09c3629" />
+We implemented subnetting in the given design and assigned IP addresses on each interfaces.
 
-If R1 wants to communicate with the network **192.168.2.0/24**, it must know that packets should be forwarded to R2.
+<img width="832" height="343" alt="image" src="https://github.com/user-attachments/assets/28f1d53b-f1a5-43dd-a8f0-b01c7335a9f4" />
+
+If R1 wants to communicate with the network **192.168.12.64/26**, it must know that packets should be forwarded to R2.
 
 ---
 
@@ -39,10 +40,10 @@ Router(config)# ip route <destination-network> <subnet-mask> <next-hop-ip-addres
 
 ### Configure Using the Next-Hop IP Address
 
-Suppose Router R1 wants to reach **192.168.2.0/24** through Router R2.
+Suppose Router R1 wants to reach **192.168.12.64/26** through Router R2.
 
 ```bash
-R1(config)# ip route 192.168.2.0 255.255.255.0 192.168.12.2
+R1(config)# ip route 192.168.12.64 255.255.255.192 192.168.12.2
 ```
 
 Explanation:
