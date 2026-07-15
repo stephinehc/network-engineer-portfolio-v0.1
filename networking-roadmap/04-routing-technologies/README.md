@@ -30,8 +30,8 @@ This section introduces the routing technologies that allow data to move efficie
 
 ## Notes & Diagrams
 - [Static Routing](../04-routing-technologies/static-routing/README.md): Best for small, stable networks. Requires manual updates when topology changes.
-- **RIP**: Simple to configure but limited scalability (max hop count = 15).
-- **OSPF**: Scalable and efficient, supports large enterprise networks with hierarchical area design.
+- [RIP](../04-routing-technologies/RIP/README.md): Simple to configure but limited scalability (max hop count = 15).
+- [OSPF](../04-routing-technologies/OSPF/README.md): Scalable and efficient, supports large enterprise networks with hierarchical area design.
 
 
 
