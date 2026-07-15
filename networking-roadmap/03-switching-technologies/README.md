@@ -382,20 +382,47 @@ S2 to S3 (PAgP EtherChannel) <br>
 S3 to S1 (LACP EtherChannel) <br>
 <img width="835" height="614" alt="image" src="https://github.com/user-attachments/assets/0a1c65c7-f4d5-4b84-8721-3040ef4284cc" />
 
+> In the given design above, the links does not have the same speed (GigabitEthernet and FastEthernet). If you try to bundle links of different speeds (say, one 1 Gbps and one 100 Mbps):
+  - The EtherChannel will fail to form (most Cisco switches will put the mismatched port into suspended or err‑disabled state).
+  - Even if it somehow comes up, load‑balancing will be uneven — traffic could be hashed onto the slower link, creating bottlenecks and packet drops
+
+For best practice, we will match the links.
+<img width="892" height="659" alt="image" src="https://github.com/user-attachments/assets/7d280da5-4d92-475f-9561-151827c4e103" />
+
 
 # 1. Static EtherChannel
+
+Refer to the figure above, link for S1 to S2.
 
 No negotiation occurs.
 
 Both switches must be manually configured.
 
 ```bash
-interface range GigabitEthernet0/1-2
+interface range f0/1,f0/20
+ switchport mode trunk
+ switchport trunk native vlan 100 (In our case we moved the Native VLAN to VLAN 100. If you did not change your native VLAN, you dont need to enter this command)
  channel-group 1 mode on
 
 interface Port-channel1
  switchport mode trunk
+ switchport trunk native vlan 100
 ```
+If you encountered this error below upon configuring the interface as trunk: 
+```bash
+Command rejected: An interface whose trunk encapsulation is "Auto" can not be configured to "trunk" mode.
+```
+Enter this command:
+```bash
+S1(config-if)# switchport trunk encapsulation dot1q
+```
+Verify:
+Portchannel group 1 (bundle of f0/1 and f0/20 on S1) is now active (SU).
+<img width="647" height="484" alt="image" src="https://github.com/user-attachments/assets/e3a96bac-5929-4753-ad31-16435963323b" />
+
+Portchannel group 1 (bundle of f0/1 and f0/20 on S2) is now active (SU).
+<img width="602" height="489" alt="image" src="https://github.com/user-attachments/assets/69ef28cb-26eb-448c-8154-5c00bb122fd8" />
+
 
 ---
 
@@ -417,10 +444,27 @@ Successful combinations:
 
 Example:
 
+Refer to the figure above.
 ```bash
-interface range GigabitEthernet0/1-2
- channel-group 1 mode desirable
+interface range f0/3,f0/21
+ switchport mode trunk
+ switchport trunk native vlan 100
+ channel-group 2 mode desirable
 ```
+Port-channel will not be activated (SU) yet unless the other end of the switch has been configured. As we can see below, Po2 shows SD.
+<img width="623" height="488" alt="image" src="https://github.com/user-attachments/assets/069561a1-b23c-481a-9949-bad4f4b8aba6" />
+
+Configure S3 and wait for this notification in the CLI to show: 
+```bash
+%LINK-5-CHANGED: Interface Port-channel2, changed state to up
+%LINEPROTO-5-UPDOWN: Line protocol on Interface Port-channel2, changed state to up
+```
+Then we verify it on S3 and S2.
+
+<img width="603" height="473" alt="image" src="https://github.com/user-attachments/assets/c19a4a38-1cca-4a46-9523-d8bf11e5e82a" />
+<img width="584" height="556" alt="image" src="https://github.com/user-attachments/assets/3f006691-de1b-41dd-8990-41f0b5aab43a" />
+
+We can now see that Po2 is now successfully established using PAgP.
 
 ---
 
