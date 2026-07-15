@@ -201,21 +201,41 @@ Router(config-router)# end
 Suppose Router R1 has two directly connected networks:
 
 ```text
-192.168.1.0/24
-10.1.1.0/30
+192.168.12.0/26
+192.168.12.128/30
+```
+Router R2 has two directly connected networks:
+
+```text
+192.168.12.64/26
+192.168.12.128/30
 ```
 
-Configuration:
+<img width="824" height="355" alt="image" src="https://github.com/user-attachments/assets/e425958a-1839-4d7a-b48b-db914a783ba8" />
 
+Configuration:
+R1
 ```bash
 R1(config)# router rip
 R1(config-router)# version 2
 R1(config-router)# no auto-summary
-R1(config-router)# network 192.168.1.0
-R1(config-router)# network 10.0.0.0
+R1(config-router)# network 192.168.12.0
+R1(config-router)# network 192.168.12.128
 ```
+R2
+```bash
+R2(config)# router rip
+R2(config-router)# version 2
+R2(config-router)# no auto-summary
+R2(config-router)# network 192.168.12.64
+R2(config-router)# network 192.168.12.128
+```
+<img width="1920" height="764" alt="image" src="https://github.com/user-attachments/assets/de447828-5260-4731-ab9d-291c8d9aeb85" />
 
-After configuration, R1 advertises both networks to neighboring RIP routers.
+#### Verify Connectivity
+Ping from PC-A to PC-B and vice versa.
+<img width="1919" height="692" alt="image" src="https://github.com/user-attachments/assets/d96a786b-5cee-4d5b-ab11-5d85b7bbadf7" />
+
 
 ---
 
