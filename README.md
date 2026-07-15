@@ -21,8 +21,8 @@ guide for anyone working toward network engineering — it's a resource, not a p
 | [👤 About Me](./about-me/README.md) | Who I am and why I'm moving into network engineering |
 | [🎖️ Certifications & Badges](./certifications-badges/README.md) | My certs and Credly profile |
 | [📊 Skills Matrix](./skills-matrix/README.md) | Technologies and protocols I'm comfortable with |
-| [🗺️ Networking Roadmap](./networking-roadmap/README.md) | My 9-stage study path, from fundamentals to enterprise design |
-| [🧪 Projects](./projects/README.md) | 9 hands-on network builds, from a small office to an enterprise capstone |
+| [🗺️ Networking Roadmap (on-going)](./networking-roadmap/README.md) | My 9-stage study path, from fundamentals to enterprise design |
+| [🧪 Projects (on-going)](./projects/README.md) | 9 hands-on network builds, from a small office to an enterprise capstone |
 
 ---
 
