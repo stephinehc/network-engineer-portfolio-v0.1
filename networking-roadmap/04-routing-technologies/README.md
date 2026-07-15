@@ -29,25 +29,11 @@ This section introduces the routing technologies that allow data to move efficie
 ---
 
 ## Notes & Diagrams
-- **Static Routing**: Best for small, stable networks. Requires manual updates when topology changes.
+- [Static Routing](../static-routing/README.md): Best for small, stable networks. Requires manual updates when topology changes.
 - **RIP**: Simple to configure but limited scalability (max hop count = 15).
 - **OSPF**: Scalable and efficient, supports large enterprise networks with hierarchical area design.
 
-- **Diagram Idea**:  
-  - Show a small network with static routes configured manually.  
-  - Another diagram with RIP exchanging routes automatically.  
-  - A larger enterprise topology with OSPF areas (Area 0 backbone, Area 1, Area 2).
 
-*(Add Packet Tracer or Visio diagrams here to visualize routing behavior.)*
-
----
-
-## Resources
-- 📖 [Cisco Networking Academy: Routing Technologies](https://www.netacad.com/courses/networking)
-- 📘 RFC 1058: Routing Information Protocol
-- 📘 RFC 2328: OSPF Version 2 Specification
-- 🎥 YouTube: “Static vs Dynamic Routing” tutorials
-- 🧩 Cisco Packet Tracer labs for RIP and OSPF practice
 
 ---
 
