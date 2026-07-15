@@ -470,6 +470,7 @@ Configure S3 and wait for this notification in the CLI to show:
 Then we verify it on S3 and S2. <br>
 
 <img width="603" height="473" alt="image" src="https://github.com/user-attachments/assets/c19a4a38-1cca-4a46-9523-d8bf11e5e82a" />
+
 <img width="584" height="556" alt="image" src="https://github.com/user-attachments/assets/3f006691-de1b-41dd-8990-41f0b5aab43a" />
 
 We can now see that Po2 is now successfully established using PAgP.
@@ -520,7 +521,9 @@ S1(config-if)#no switchport access vlan 10
 S1(config)#int po3
 S1(config-if)#no shutdown
 ```
-Verify if Po3 is created on S1 already.
+
+Verify if Po3 is created on S1 already. <br>
+
 <img width="570" height="295" alt="image" src="https://github.com/user-attachments/assets/c783b750-1688-455f-85dd-cd007fbea7cd" />
 
 We can now see that Po3 is successfully created on S1 but is not yet active (SD). Configure S3 to fully establish the link aggregation.
