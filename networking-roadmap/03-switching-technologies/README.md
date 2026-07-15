@@ -447,12 +447,16 @@ Successful combinations:
 
 Example:
 
-Refer to the figure above.
+Refer to the figure above. Connection between S2 and S3.
 ```bash
 interface range f0/3,f0/21
  switchport mode trunk
  switchport trunk native vlan 100
  channel-group 2 mode desirable
+
+interface Port-channel2
+ switchport mode trunk
+ switchport trunk native vlan 100
 ```
 Port-channel will not be activated (SU) yet unless the other end of the switch has been configured. As we can see below, Po2 shows SD. <br>
 
@@ -490,10 +494,50 @@ Successful combinations:
 
 Example:
 
+Refer to the figure above. Connection between S3 and S1.
 ```bash
-interface range GigabitEthernet0/1-2
- channel-group 1 mode active
+interface range f0/2,f0/22
+ switchport mode trunk
+ switchport trunk native vlan 100
+ channel-group 3 mode active
+
+interface Port-channel3
+ switchport mode trunk
+ switchport trunk native vlan 100
 ```
+Upon combining interfaces f0/2 and f0/22, we have identified that it cant be combined succesfully.
+```text
+%EC-5-CANNOT_BUNDLE2: Fa0/2 is not compatible with Po3 and will be suspended  (native vlan of Fa0/2 is 100, Po3 id 1)
+%EC-5-CANNOT_BUNDLE2: Fa0/22 is not compatible with Po3 and will be suspended  (native vlan of Fa0/22 is 100, Po3 id 1)
+```
+Upon troubleshooting, f0/22 belonged to vlan 10 which is in access mode (see the figure below). We need to remove the access mode of f0/22. 
+
+<img width="662" height="316" alt="image" src="https://github.com/user-attachments/assets/0f42c690-2760-4253-8724-82ed20f52c1a" />
+
+```bash
+S1(config)#interface f0/22
+S1(config-if)#no switchport access vlan 10
+S1(config)#int po3
+S1(config-if)#no shutdown
+```
+Verify if Po3 is created on S1 already.
+<img width="570" height="295" alt="image" src="https://github.com/user-attachments/assets/c783b750-1688-455f-85dd-cd007fbea7cd" />
+
+We can now see that Po3 is successfully created on S1 but is not yet active (SD). Configure S3 to fully establish the link aggregation.
+```bash
+interface range f0/2,f0/22
+ switchport mode trunk
+ switchport trunk native vlan 100
+ channel-group 3 mode passive
+
+interface Port-channel3
+ switchport mode trunk
+ switchport trunk native vlan 100
+```
+<img width="574" height="290" alt="image" src="https://github.com/user-attachments/assets/be0a6af6-52a9-4ed7-bb15-e8dfb3523758" />
+
+Port-channel 3 is now successfully established using LACP.
+
 
 ---
 
@@ -503,12 +547,8 @@ interface range GigabitEthernet0/1-2
 show etherchannel summary
 ```
 
-Example output:
+<img width="1920" height="1023" alt="image" src="https://github.com/user-attachments/assets/2ae5ddce-21da-451d-9ce2-05ac5788215b" />
 
-```text
-Group  Port-channel  Protocol
-1      Po1(SU)       LACP
-```
 
 ---
 
@@ -532,12 +572,14 @@ View the current load-balancing method:
 ```bash
 Switch# show etherchannel load-balance
 ```
+<img width="478" height="133" alt="image" src="https://github.com/user-attachments/assets/00efb270-f984-44dd-8b8c-3eaee73db9d7" />
 
 Configure load balancing:
 
 ```bash
 Switch(config)# port-channel load-balance src-dst-ip
 ```
+<img width="536" height="200" alt="image" src="https://github.com/user-attachments/assets/08154350-8569-47bc-82bc-d8c1862fcc55" />
 
 ---
 
