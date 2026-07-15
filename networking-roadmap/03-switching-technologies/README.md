@@ -386,7 +386,8 @@ S3 to S1 (LACP EtherChannel) <br>
   - The EtherChannel will fail to form (most Cisco switches will put the mismatched port into suspended or err‑disabled state).
   - Even if it somehow comes up, load‑balancing will be uneven — traffic could be hashed onto the slower link, creating bottlenecks and packet drops
 
-For best practice, we will match the links.
+For best practice, we will match the links. <br>
+
 <img width="892" height="659" alt="image" src="https://github.com/user-attachments/assets/7d280da5-4d92-475f-9561-151827c4e103" />
 
 
@@ -398,7 +399,7 @@ No negotiation occurs.
 
 Both switches must be manually configured.
 
-```bash
+```text
 interface range f0/1,f0/20
  switchport mode trunk
  switchport trunk native vlan 100 (In our case we moved the Native VLAN to VLAN 100. If you did not change your native VLAN, you dont need to enter this command)
@@ -417,10 +418,12 @@ Enter this command:
 S1(config-if)# switchport trunk encapsulation dot1q
 ```
 Verify:
-Portchannel group 1 (bundle of f0/1 and f0/20 on S1) is now active (SU).
+Port-channel group 1 (bundle of f0/1 and f0/20 on S1) is now active (SU). <br>
+
 <img width="647" height="484" alt="image" src="https://github.com/user-attachments/assets/e3a96bac-5929-4753-ad31-16435963323b" />
 
-Portchannel group 1 (bundle of f0/1 and f0/20 on S2) is now active (SU).
+Port-channel group 1 (bundle of f0/1 and f0/20 on S2) is now active (SU). <br>
+
 <img width="602" height="489" alt="image" src="https://github.com/user-attachments/assets/69ef28cb-26eb-448c-8154-5c00bb122fd8" />
 
 
@@ -451,7 +454,8 @@ interface range f0/3,f0/21
  switchport trunk native vlan 100
  channel-group 2 mode desirable
 ```
-Port-channel will not be activated (SU) yet unless the other end of the switch has been configured. As we can see below, Po2 shows SD.
+Port-channel will not be activated (SU) yet unless the other end of the switch has been configured. As we can see below, Po2 shows SD. <br>
+
 <img width="623" height="488" alt="image" src="https://github.com/user-attachments/assets/069561a1-b23c-481a-9949-bad4f4b8aba6" />
 
 Configure S3 and wait for this notification in the CLI to show: 
@@ -459,7 +463,7 @@ Configure S3 and wait for this notification in the CLI to show:
 %LINK-5-CHANGED: Interface Port-channel2, changed state to up
 %LINEPROTO-5-UPDOWN: Line protocol on Interface Port-channel2, changed state to up
 ```
-Then we verify it on S3 and S2.
+Then we verify it on S3 and S2. <br>
 
 <img width="603" height="473" alt="image" src="https://github.com/user-attachments/assets/c19a4a38-1cca-4a46-9523-d8bf11e5e82a" />
 <img width="584" height="556" alt="image" src="https://github.com/user-attachments/assets/3f006691-de1b-41dd-8990-41f0b5aab43a" />
