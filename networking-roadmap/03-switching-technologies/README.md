@@ -57,7 +57,8 @@ STP operates through the following steps:
 
 ### Example
 
-<img width="831" height="693" alt="image" src="https://github.com/user-attachments/assets/d8554a72-fce4-4e7f-8d34-a1fa6f97d5b1" />
+<img width="1059" height="689" alt="image" src="https://github.com/user-attachments/assets/bf2e5736-d660-40ce-9811-02e4ebd24060" />
+
 
 
 Without STP, frames may loop indefinitely.
@@ -315,6 +316,7 @@ Verify:
 ```bash
 Switch# show spanning-tree summary
 ```
+<img width="607" height="345" alt="image" src="https://github.com/user-attachments/assets/17bbe940-ddea-4718-9d05-c5f134db1bd9" />
 
 ---
 
@@ -323,6 +325,8 @@ Switch# show spanning-tree summary
 **EtherChannel** combines multiple physical Ethernet links into a **single logical interface (Port-Channel)**.
 
 Instead of forwarding traffic over one cable, EtherChannel distributes traffic across multiple links while appearing as a single connection.
+
+> NOTE: When combining multiple physical Ethernet links, the links should have the same parameters such as the speed, duplex, vlan association (trunk or access mode), and same allowed vlans (if in trunking).
 
 ---
 
@@ -371,6 +375,13 @@ Cisco supports three methods for creating EtherChannels.
 | LACP | IEEE 802.3ad / IEEE 802.1AX | Yes |
 
 ---
+
+Let us consider this given topology below to demonstrate the 3 methods of etherchannel configuration. <br>
+S1 to S2 (Static EtherChannel) <br>
+S2 to S3 (PAgP EtherChannel) <br>
+S3 to S1 (LACP EtherChannel) <br>
+<img width="835" height="614" alt="image" src="https://github.com/user-attachments/assets/0a1c65c7-f4d5-4b84-8721-3040ef4284cc" />
+
 
 # 1. Static EtherChannel
 
