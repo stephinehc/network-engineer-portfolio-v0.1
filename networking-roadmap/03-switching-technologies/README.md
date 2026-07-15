@@ -549,8 +549,9 @@ Port-channel 3 is now successfully established using LACP.
 ```bash
 show etherchannel summary
 ```
+> NOTE: Spanning-tree protocol will take a couple of minutes to take effect.
 
-<img width="1920" height="1023" alt="image" src="https://github.com/user-attachments/assets/2ae5ddce-21da-451d-9ce2-05ac5788215b" />
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/9b49483c-27e0-43f7-ace2-e14aa44684cc" />
 
 
 ---
