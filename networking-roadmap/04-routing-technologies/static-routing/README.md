@@ -39,32 +39,46 @@ Router(config)# ip route <destination-network> <subnet-mask> <next-hop-ip-addres
 ---
 
 ### Configure Using the Next-Hop IP Address
-
+Let us implement it on R1.
 Suppose Router R1 wants to reach **192.168.12.64/26** through Router R2.
 
 ```bash
-R1(config)# ip route 192.168.12.64 255.255.255.192 192.168.12.2
+R1(config)# ip route 192.168.12.64 255.255.255.192 192.168.12.130
 ```
 
 Explanation:
 
-- Destination Network: **192.168.2.0**
-- Subnet Mask: **255.255.255.0**
-- Next-Hop Address: **192.168.12.2**
+- Destination Network: **192.168.12.64**
+- Subnet Mask: **255.255.255.192**
+- Next-Hop Address: **192.168.12.130**
 
-Whenever R1 receives packets destined for **192.168.2.0/24**, it forwards them to **192.168.12.2**.
+Whenever R1 receives packets destined for **192.168.12.64/26**, it forwards them to **192.168.12.130**.
+
+<img width="1631" height="554" alt="image" src="https://github.com/user-attachments/assets/4acc5041-27ec-4641-b41e-3ab736997b1d" />
 
 ---
 
 ### Configure Using the Exit Interface
-
+Let us implement it on R2.
 Instead of specifying the next-hop IP address, the outgoing interface may also be configured.
 
 ```bash
-R1(config)# ip route 192.168.2.0 255.255.255.0 GigabitEthernet0/0
+R2(config)# ip route 192.168.12.0 255.255.255.192 GigabitEthernet0/0
 ```
-
 The router sends packets directly out of the specified interface.
+
+<img width="1630" height="653" alt="image" src="https://github.com/user-attachments/assets/6639f88b-4ef4-4833-bcd0-f9b1fd6e36da" />
+
+#### Verify connectivity
+
+Configure the IP address of the PCs.
+
+<img width="1078" height="570" alt="image" src="https://github.com/user-attachments/assets/fcfd6717-9b41-4658-a671-847c1ba6dc63" />
+
+Ping from PC-A to PC-B and vice versa.
+
+<img width="1894" height="585" alt="image" src="https://github.com/user-attachments/assets/27538c51-f87c-4191-90ef-99ecf4ce08bf" />
+
 
 ---
 
@@ -81,7 +95,7 @@ Router(config)# ip route 0.0.0.0 0.0.0.0 <next-hop-ip>
 Example:
 
 ```bash
-R1(config)# ip route 0.0.0.0 0.0.0.0 192.168.12.2
+R1(config)# ip route 0.0.0.0 0.0.0.0 192.168.12.130
 ```
 
 This route is known as the **Gateway of Last Resort**.
@@ -95,7 +109,7 @@ R1# show ip route
 Example output:
 
 ```text
-Gateway of last resort is 192.168.12.2
+Gateway of last resort is 192.168.12.130
 ```
 
 ---
