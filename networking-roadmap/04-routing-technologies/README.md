@@ -8,6 +8,7 @@
 <p align="justify">
 This section introduces the routing technologies that allow data to move efficiently across networks. Static routing provides manual control, while dynamic routing protocols like RIP and OSPF automate path selection and adapt to network changes. Understanding these methods is critical for designing resilient and scalable enterprise networks.
 </p>
+
 ---
 
 ## Topics Covered
