@@ -350,3 +350,8 @@ undebug all
 # Summary
 
 The **Routing Information Protocol (RIP)** is a simple **distance-vector routing protocol** that automatically exchanges routing information with neighboring routers. It selects the best path using **hop count** as its routing metric and periodically advertises its routing table every **30 seconds**. While RIP is easy to configure and suitable for small networks, its **15-hop limitation**, **slow convergence**, and **periodic routing updates** make it unsuitable for larger or more complex networks. In modern enterprise environments, **RIPv2** is preferred over RIPv1 because it supports **VLSM**, **CIDR**, **authentication**, and **multicast updates**.
+
+---
+
+[Static Routing](../../04-routing-technologies/static-routing/README.md) · [OSPF](../../04-routing-technologies/OSPF/README.md) <br><br> 
+[⬅ Routing Technologies (Static, RIP, OSPF)](../../04-routing-technologies/README.md) 
