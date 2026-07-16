@@ -378,6 +378,7 @@ Configure the new router ID to each of the router.
 <img width="1500" height="701" alt="image" src="https://github.com/user-attachments/assets/5e620a6b-f83d-4a9e-9f62-489105c581ca" />
 
 Verify if the new DR is now R1 and R2 is BDR.
+
 <img width="686" height="117" alt="image" src="https://github.com/user-attachments/assets/49c67836-a75f-4c7f-ba8c-bf8aa13cec0c" />
 
 <img width="725" height="97" alt="image" src="https://github.com/user-attachments/assets/60629730-efd1-4d3a-8d23-edde321cd1e8" />
