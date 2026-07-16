@@ -249,3 +249,8 @@ show running-config
 # Summary
 
 Static routing provides a simple, secure, and predictable method of forwarding packets by manually defining network paths. It performs well in small or stable environments where routes rarely change and minimal routing overhead is desired. However, because routes do not update automatically, static routing becomes difficult to manage in larger or frequently changing networks. For enterprise environments with many routers, dynamic routing protocols such as **RIP**, **OSPF**, or **EIGRP** are generally more suitable.
+
+---
+
+[RIP](../../04-routing-technologies/RIP/README.md) · [OSPF](../../04-routing-technologies/OSPF/README.md) <br><br> 
+[⬅ Routing Technologies (Static, RIP, OSPF)](../../04-routing-technologies/README.md) 
