@@ -308,7 +308,9 @@ O    192.168.2.0/24
 
 ---
 
-# Example Scenario:
+# Scenario 1:
+Configure OSPF and verify connectivity between end devices.
+
 <img width="884" height="385" alt="image" src="https://github.com/user-attachments/assets/ff36eca1-090a-499b-b4fd-01751bda5a79" />
 
 
@@ -336,15 +338,51 @@ Router(config-router)# end
 Verify OSPF route:
 
 On R1, it shows the route of the network 192.168.12.64/26 and is using OSPF (O).
+
 <img width="686" height="303" alt="image" src="https://github.com/user-attachments/assets/e5765739-3fa7-434e-add8-c229cc698d47" />
 
 On R2, it shows the route of the network 192.168.12.0/26 and is using OSPF (O).
+
 <img width="724" height="268" alt="image" src="https://github.com/user-attachments/assets/fd46d48d-09e7-4971-a2b9-c44c7c9e90d8" />
 
 Verify connectivity:
 
 Ping and trace route from PC-A to PC-b and vice versa.
+
 <img width="1895" height="742" alt="image" src="https://github.com/user-attachments/assets/096fa0fd-6624-405d-91dd-04cd054ef2f1" />
+
+# Scenario 2:
+In the same network topology, verify which router is the DR and BDR. 
+
+<img width="1475" height="499" alt="image" src="https://github.com/user-attachments/assets/27ad3b69-3133-4389-a45f-dc1e146a176f" />
+
+Upon checking, R1 is set to be the BDR and R2 is the DR.
+
+Base on the election process: 1) Highest interface Priority, 2) Highest router ID
+
+Both routers have the same priority value so the election is basing on the router ID value.
+```text
+ Designated Router (ID) 192.168.12.130, Interface address 192.168.12.130
+ Backup Designated Router (ID) 192.168.12.129, Interface address 192.168.12.129
+```
+Notice that the DR ID is the IP address of the interface g0/0 of R2 and the BDR ID is the ip address of the interface g0/0 of R1. If we want R1 to become the DR, we can change the router IDs of R1 and R2. 
+
+Let us assign a router ID.
+```text
+R1 router ID: 2.2.2.2
+R2 router ID: 1.1.1.1
+```
+
+Configure the new router ID to each of the router.
+
+<img width="1500" height="701" alt="image" src="https://github.com/user-attachments/assets/5e620a6b-f83d-4a9e-9f62-489105c581ca" />
+
+Verify if the new DR is now R1 and R2 is BDR.
+<img width="686" height="117" alt="image" src="https://github.com/user-attachments/assets/49c67836-a75f-4c7f-ba8c-bf8aa13cec0c" />
+
+<img width="725" height="97" alt="image" src="https://github.com/user-attachments/assets/60629730-efd1-4d3a-8d23-edde321cd1e8" />
+
+On R1, the neighbor router ID 1.1.1.1 associated with the IP address 192.168.12.130 which is R2 is now the BDR while on R2, the neighbor router ID 2.2.2.2 associated with the IP address 192.168.12.129 which is R1 is now the DR.
 
 ---
 
