@@ -20,7 +20,7 @@ If you're evaluating my hands-on skills, the
 1. [Network Design Fundamentals](./01-network-design-fundamentals/README.md)
 2. [LAN Technologies](./02-lan-technologies/README.md)
 3. [Switching Technologies](./03-switching-technologies/README.md)
-4. [Routing Technologies (on-going)](./04-routing-technologies/README.md)
+4. [Routing Technologies](./04-routing-technologies/README.md)
 5. [Network Services (on-going)](./05-network-services/README.md)
 6. [Network Security (on-going)](./06-network-security/README.md)
 7. [High Availability (on-going)](./07-high-availability/README.md)
