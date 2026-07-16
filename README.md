@@ -36,8 +36,8 @@ Each section above has its own README. Every roadmap stage and every project inc
 
 ## Contact
 
-- ✉️ Email: _2k16st.cmp@gmail.com_
-- 💼 LinkedIn: _linkedin.com/in/your-profile_
+- ✉️ Email: _[Contact me](mailto:2k16st.cmp@gmail.com)_
+- 💼 LinkedIn: _[Stephine Hubert Campos](https://www.linkedin.com/in/stephine-hubert-campos/)_
 - 🐙 GitHub: [github.com/stephinehc](https://github.com/stephinehc)
 
 ---
