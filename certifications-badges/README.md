@@ -11,7 +11,8 @@ All verified certifications and digital badges are on my Credly profile:
 **🔗 [View my Credly badges →](https://www.credly.com/users/stephine-hubert-campos)**
 
 ## 🎓 Academic Transcript
-** [View my verified Credly transcript (PDF)](./Credly_Academic_Transcript.pdf)
+
+**🔗 [View my verified Credly transcript (PDF)](./Credly_Academic_Transcript.pdf)**
 
 ---
 <p align="justify">
