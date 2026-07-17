@@ -10,6 +10,9 @@ All verified certifications and digital badges are on my Credly profile:
 
 **🔗 [View my Credly badges →](https://www.credly.com/users/stephine-hubert-campos)**
 
+## 🎓 Academic Transcript
+** [View my verified Credly transcript (PDF)](./Credly_Academic_Transcript.pdf)
+
 ---
 <p align="justify">
 Below are the certifications and digital badges I have earned, grouped by category. Each badge includes its image, name, and a link to verify on Credly.
