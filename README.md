@@ -9,7 +9,7 @@ already know. The <a href="./networking-roadmap/README.md">Networking Roadmap</a
 guide for anyone working toward network engineering — it's a resource, not a progress tracker.
 </p>
 
-**🔗 Live landing page:** [View the portfolio site](https://stephinehc.github.io/network-engineer-portfolio-v0.1/) · [index.html](./index.html)
+**🔗 Live landing page:** [View the portfolio site (on-going)](https://stephinehc.github.io/network-engineer-portfolio-v0.1/)
 
 
 ---
