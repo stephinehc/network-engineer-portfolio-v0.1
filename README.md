@@ -1,4 +1,4 @@
-# 🌐 Network Engineer Portfolio
+# 🌐 Enterprise Networking Portfolio
 
 <p align="justify">
 Welcome — I'm an Engineering College Instructor, a licensed Electronics Engineer, and a Certified
