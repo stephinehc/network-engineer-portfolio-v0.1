@@ -8,6 +8,7 @@
 <p align="justify">
 This section introduces the essential network services that support connectivity and communication in enterprise environments. DHCP automates IP address assignment, DNS translates human-readable names into IP addresses, and TFTP provides lightweight file transfer capabilities. Together, these services simplify network operations and improve efficiency.
 </p>
+
 ---
 
 ## Topics Covered
