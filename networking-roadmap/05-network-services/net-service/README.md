@@ -1,3 +1,7 @@
+
+
+---
+
 # Network Services Laboratory
 ## DHCP, DNS, and Web Server Configuration
 
@@ -51,8 +55,8 @@ Under Services Tab, we will select DHCP and configure it using the provided info
 Under Services Tab, select ON. Right now, there are no files saved yet.
 <img width="873" height="555" alt="image" src="https://github.com/user-attachments/assets/34fede14-2343-4f86-9108-f94f6dc7e928" />
 
-### Configure the Edge Router
-#### IP configuration
+## Configure the Edge Router
+### IP configuration
 ```text
 Edge Router
 g0/0/0	192.168.0.1/24
@@ -61,11 +65,48 @@ s0/1/0	10.0.0.1/30
 ```
 <img width="849" height="632" alt="image" src="https://github.com/user-attachments/assets/7a120e4a-d005-498c-8c09-e375fa6e5794" />
 
-#### Configure Edge Router as DHCP
+### Configure Edge Router as DHCP
 <img width="543" height="115" alt="image" src="https://github.com/user-attachments/assets/d6dc319c-d84b-492e-a930-f28555e97b7b" />
 
 ## DHCP verification
 PC-A and PC-B has successfully acquired an IP address.
 <img width="1063" height="555" alt="image" src="https://github.com/user-attachments/assets/5555f021-5b6f-40cf-9f72-c17d15c183d3" />
+
+## DNS and Web Server Configuration
+### IP Configuration
+#### DNS Server
+Under Desktop Tab, configure the IP.
+<img width="873" height="561" alt="image" src="https://github.com/user-attachments/assets/36260074-e202-450e-a8ea-0d168c356c28" />
+
+#### Web Server
+Under Desktop Tab, configure the IP.
+<img width="1919" height="578" alt="image" src="https://github.com/user-attachments/assets/9a55f012-a40d-477d-82d0-5589ae8cdce7" />
+
+### Server Configuration
+#### DNS Server
+Under Servics Tab, select DNS > click On > add the following information.
+<img width="871" height="403" alt="image" src="https://github.com/user-attachments/assets/4dad4da6-299b-4f92-b2ed-80c331e98daf" />
+
+#### Web Server
+Under Services Tab, select HTTP > click On for both HTTP and HTTPS > click import to add your own html file (optional).
+
+Repeat this process to the other web servers (srwe.com and ensa.com)
+
+<img width="637" height="697" alt="image" src="https://github.com/user-attachments/assets/804b7928-d732-41c5-aa99-4d3863c07142" />
+
+## Routing Configuration for Edge and Server Router
+We will use OSPF for the routing protocol.
+<img width="1277" height="791" alt="image" src="https://github.com/user-attachments/assets/c00d8ad0-fcf7-4a39-b7df-562f2a698e28" />
+
+## DNS Verification
+```text
+Web Servers
+itn.com	  201.20.1.10/24
+srwe.com	201.20.1.11/24
+ensa.com	201.20.1.12/24
+```
+<img width="1647" height="966" alt="image" src="https://github.com/user-attachments/assets/a40d0283-4298-4d1f-86db-e1c6c16d8eb0" />
+
+---
 
 
