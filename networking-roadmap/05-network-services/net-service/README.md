@@ -107,6 +107,11 @@ ensa.com	201.20.1.12/24
 ```
 <img width="1647" height="966" alt="image" src="https://github.com/user-attachments/assets/a40d0283-4298-4d1f-86db-e1c6c16d8eb0" />
 
+<img width="813" height="693" alt="image" src="https://github.com/user-attachments/assets/f8af0dc4-dd9d-48a6-8d06-6c4591d1f263" />
+
+<img width="811" height="696" alt="image" src="https://github.com/user-attachments/assets/e4533a40-4e6f-470e-ada8-ceac5ed88864" />
+
+
 ## TFTP Verification
 Copy the running-config of the routers (Edge and Server router) to the TFTP server (192.168.0.2)
 <img width="1130" height="461" alt="image" src="https://github.com/user-attachments/assets/f939be58-d0bc-49e9-8245-706e1a546bb0" />
