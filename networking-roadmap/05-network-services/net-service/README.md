@@ -6,7 +6,6 @@
 # Network Services
 ## DHCP, DNS, and Web Server Configuration
 
----
 
 # Scenario
 
@@ -107,6 +106,15 @@ srwe.com	201.20.1.11/24
 ensa.com	201.20.1.12/24
 ```
 <img width="1647" height="966" alt="image" src="https://github.com/user-attachments/assets/a40d0283-4298-4d1f-86db-e1c6c16d8eb0" />
+
+## TFTP Verification
+Copy the running-config of the routers (Edge and Server router) to the TFTP server (192.168.0.2)
+<img width="1130" height="461" alt="image" src="https://github.com/user-attachments/assets/f939be58-d0bc-49e9-8245-706e1a546bb0" />
+
+Running configuration of the routers has been successfully copied in the TFTP server.
+<img width="1055" height="641" alt="image" src="https://github.com/user-attachments/assets/c16eea6c-36cd-4c16-856c-2753122fe1b5" />
+
+
 
 ---
 
