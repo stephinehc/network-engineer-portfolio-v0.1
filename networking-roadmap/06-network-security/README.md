@@ -9,6 +9,7 @@
 <p align="justify">
 This section introduces the fundamental security mechanisms used in enterprise networks. Access Control Lists (ACLs) provide traffic filtering and policy enforcement, while Network Address Translation (NAT) enables private IP addressing schemes to communicate with external networks securely. Together, ACLs and NAT form the backbone of perimeter defense and traffic management.
 </p>
+
 ---
 
 ## Topics Covered
