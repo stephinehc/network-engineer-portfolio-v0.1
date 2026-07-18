@@ -1,8 +1,9 @@
 
+[Network Services](../05-network-services/README.md)
 
 ---
 
-# Network Services Laboratory
+# Network Services
 ## DHCP, DNS, and Web Server Configuration
 
 ---
@@ -109,4 +110,5 @@ ensa.com	201.20.1.12/24
 
 ---
 
+[Network Services](../05-network-services/README.md)
 
