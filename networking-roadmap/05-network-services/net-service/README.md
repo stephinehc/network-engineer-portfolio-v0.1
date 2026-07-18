@@ -1,5 +1,5 @@
 
-[Network Services](../05-network-services/README.md)
+[Network Services](../../README.md)
 
 ---
 
