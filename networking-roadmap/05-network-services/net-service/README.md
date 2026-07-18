@@ -110,5 +110,5 @@ ensa.com	201.20.1.12/24
 
 ---
 
-[Network Services](../05-network-services/README.md)
+[Network Services](../README.md)
 
