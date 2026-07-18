@@ -313,7 +313,7 @@ copy flash: tftp
 > **Note:** TFTP should only be used on **trusted local networks** because it does not provide authentication or encryption. For secure file transfers over untrusted networks, **SFTP** is the recommended protocol.
 
 # Example Scenario
-[Scenario](../04-routing-technologies/net-service/README.md)
+[Scenario](../05-network-services/net-service/README.md)
 
 ---
 
