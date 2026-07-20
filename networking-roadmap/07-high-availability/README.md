@@ -163,6 +163,7 @@ Common issues:
 
 # Network Design Project
 [ABC Technologies – Enterprise Network Design](../07-high-availability/example/README.md)
+
 ---
 
 [⬅ Back to Home](../../README.md) · [⬅ Networking Roadmap](../README.md) <br><br> [← Previous](../06-network-security/README.md) · [Next →](../08-secure-wan/README.md)
