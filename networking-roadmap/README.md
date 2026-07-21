@@ -23,7 +23,7 @@ If you're evaluating my hands-on skills, the
 4. [Routing Technologies](./04-routing-technologies/README.md)
 5. [Network Services](./05-network-services/README.md)
 6. [Network Security (on-going)](./06-network-security/README.md)
-7. [High Availability (on-going)](./07-high-availability/README.md)
+7. [High Availability](./07-high-availability/README.md)
 8. [Secure WAN (on-going)](./08-secure-wan/README.md)
 9. [Enterprise Campus Network Concepts (on-going)](./09-enterprise-campus-network-concepts/README.md)
 
