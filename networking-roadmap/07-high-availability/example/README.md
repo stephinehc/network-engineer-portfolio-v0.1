@@ -98,13 +98,9 @@ VLAN100 (Management)  Po1 (S1: F0/23 & F0/24, S2: F0/1 & F0/24), S1 and S2: G0/1
 ```
 <img width="1479" height="756" alt="image" src="https://github.com/user-attachments/assets/b252e80b-eeb0-4ecb-9add-932cd498214c" />
 
-We will only allow VLAN 10, 20, 30, and 100.
-
-<img width="1176" height="315" alt="image" src="https://github.com/user-attachments/assets/22a5a0a3-ef0d-4323-8986-077e829e6cc0" />
-
 
 ### Etherchannel Configuration
-On both switches, configure the etherchannel (Port-channel 1). We will use LACP.
+On both switches, configure the etherchannel (Port-channel 1). We will use PAGP.
 ```bash
 int range f0/23,f0/24
   channel-group 1 mode desirable
@@ -114,7 +110,8 @@ int po1
   switchport trunk native vlan 100
   switchport trunk allowed vlan 10,20,30,100
 ```
-<img width="1499" height="463" alt="image" src="https://github.com/user-attachments/assets/edb62df9-6405-4be1-b9d0-981430ec010e" />
+<img width="1377" height="734" alt="image" src="https://github.com/user-attachments/assets/da25df73-1688-4688-b996-bbde35cf3ed4" />
+
 
 ### STP Configuration
 Enable rapid-pvst on both switches.
