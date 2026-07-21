@@ -138,25 +138,25 @@ spanning-tree portfast
 
 ```text
 ARtr (Active Router)
-g0/0.10	192.168.10.1/24
-g0/0.20	192.168.20.1/24
-g0/0.30	192.168.30.1/24
+g0/0.10	  192.168.10.1/24
+g0/0.20	  192.168.20.1/24
+g0/0.30	  192.168.30.1/24
 g0/0.100	192.168.100.1/24
-s0/0/0	200.0.2.1/30
+s0/0/0	  200.0.2.1/30
 
 SRtr (Standby Router)
-g0/0.10	192.168.10.2/24
-g0/0.20	192.168.20.2/24
-g0/0.30	192.168.30.2/24
-g0/0.100	192.168.100.2/24
-s0/0/0	200.0.1.1/30
+g0/0.10   192.168.10.2/24
+g0/0.20   192.168.20.2/24
+g0/0.30   192.168.30.2/24
+g0/0.100  192.168.100.2/24
+s0/0/0	  200.0.1.1/30
 
 For HSRP, the same information below will be used for HSRP. 
 HSRP
 VRIP (VLAN 10)		192.168.10.11/24
 VRIP (VLAN 20)		192.168.20.12/24
 VRIP (VLAN 30)		192.168.30.13/24
-VRIP (VLAN 100)	192.168.100.10/24
+VRIP (VLAN 100)	  192.168.100.10/24
 ```
 We will use the following information above for the aforementioned configurations. ARtr will have higher priority(150) to become the active router and SRtr will have lower priority(50) to become the standby router.
 
