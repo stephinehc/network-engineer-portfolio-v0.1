@@ -71,16 +71,15 @@ Upon completion of the project, demonstrate that:
 <img width="1476" height="648" alt="image" src="https://github.com/user-attachments/assets/6cffa2e2-fdf7-481c-939d-f931656b7632" />
 
 
-### VLAN Configuration
+### VLAN Configuration and Interface Assignment (Access and Trunk)
 On both switches, configure the VLANs.
 ```text
-VLAN10 (Sales)        S1: F0/2, S2: F0/2
-VLAN20 (Billing)      S1: F0/3, S2: F0/3
-VLAN30 (HR)           S2: F0/4
+VLAN10 (Sales)        S1: F0/1, S2: F0/1
+VLAN20 (Billing)      S1: F0/2, S2: F0/2
+VLAN30 (HR)           S2: F0/3
 VLAN99 (Security)     All unused ports (shutdown)
-VLAN100 (Management)  Po1 (S1: F0/1 & F0/24, S2: F0/1 & F0/24)
+VLAN100 (Management)  Po1 (S1: F0/23 & F0/24, S2: F0/23 & F0/24)
 ```
-<img width="1425" height="261" alt="image" src="https://github.com/user-attachments/assets/da519e59-8bba-48b7-bcf2-4ae01ff5333e" />
 
 Activate the VLANS on both switches
 ```bash
@@ -89,20 +88,15 @@ interface vlan 20
 interface vlan 30
 interface vlan 100
 ```
-
-#### Interface Assignment (Access and Trunk)
+Assignment of Ports
 ```text
-VLAN10 (Sales)        S1: F0/2, S2: F0/2                                         Access
-VLAN20 (Billing)      S1: F0/3, S2: F0/3                                         Access
-VLAN30 (HR)           S2: F0/4                                                   Access
+VLAN10 (Sales)        S1: F0/1, S2: F0/1                                         Access
+VLAN20 (Billing)      S1: F0/2, S2: F0/2                                         Access
+VLAN30 (HR)           S2: F0/3                                                   Access
 VLAN99 (Security)     All unused ports (shutdown)                                Shutdown
-VLAN100 (Management)  Po1 (S1: F0/1 & F0/24, S2: F0/1 & F0/24), S1 and S2: G0/1  Trunk
+VLAN100 (Management)  Po1 (S1: F0/23 & F0/24, S2: F0/1 & F0/24), S1 and S2: G0/1  Trunk
 ```
-<img width="668" height="627" alt="image" src="https://github.com/user-attachments/assets/e64e2c9a-9a46-4988-a8b8-a286916b5f3f" />
-
-<img width="669" height="476" alt="image" src="https://github.com/user-attachments/assets/f0ddbe09-d9f5-416b-ad68-c596c4a22363" />
-
-<img width="1125" height="72" alt="image" src="https://github.com/user-attachments/assets/79c0d46c-3645-44c1-af4d-5457dba31071" />
+<img width="1479" height="756" alt="image" src="https://github.com/user-attachments/assets/b252e80b-eeb0-4ecb-9add-932cd498214c" />
 
 We will only allow VLAN 10, 20, 30, and 100.
 
@@ -112,8 +106,8 @@ We will only allow VLAN 10, 20, 30, and 100.
 ### Etherchannel Configuration
 On both switches, configure the etherchannel (Port-channel 1). We will use LACP.
 ```bash
-int range f0/1,f0/24
-  channel-group 1 mode active
+int range f0/23,f0/24
+  channel-group 1 mode desirable
 
 int po1
   switchport mode trunk
@@ -131,16 +125,16 @@ spanning-tree mode rapid-pvst
 
 Enable portfast on connections to end devices. 
 ```text
-S1: F0/2, F0/3
-S2: F0/2, F0/3, F0/4
+S1: F0/1, F0/
+S2: F0/1, F0/2, F0/3
 ```
 ```bash
 Configure on S1
-interface range f0/2-3
+interface range f0/1-2
 spanning-tree portfast
 
 Configure on S2
-interface range f0/2-4
+interface range f0/1-3
 spanning-tree portfast
 ```
 ### Router Configuration (Inter-VLAN, HSRP, IP and Routing)
