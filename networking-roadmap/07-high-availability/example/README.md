@@ -229,9 +229,10 @@ int s0/0/0
 ip route 0.0.0.0 0.0.0.0 s0/0/0 200.0.1.2
 ```
 ## Network Re-design
-Upon proper evaluation, if the connection between either ARtr and the ISP or SRtr and the ISP fails, the local network will not be able to connect to the internet, unless the connection between ARtr and S1 fails, because that is the only time that SRtr will become the **active router** and the local network can access the internet. Therefore, I have decided to add a connection between ARtr and SRtr in order for the local network to still connect to the internet.
+Upon proper evaluation, if the connection between either ARtr and the WAN or SRtr and the WAN fails, the local network will not be able to connect to the internet, unless the connection between ARtr and S1 fails, because that is the only time that SRtr will become the **active router** and the local network can access the internet. Therefore, I have decided to add a connection between ARtr and SRtr in order for the local network to still connect to the internet.
 
-<img width="1401" height="647" alt="image" src="https://github.com/user-attachments/assets/732f39fc-aceb-4d8f-8d5b-9b1a08269b3f" />
+<img width="1246" height="661" alt="image" src="https://github.com/user-attachments/assets/a3c868a1-f476-48af-847f-d0d631c2a4d6" />
+
 
 I have added another static route between ARtr and SRtr
 ```bash
@@ -243,11 +244,12 @@ ip route 0.0.0.0 0.0.0.0 g0/1 10.0.0.1
 ## Verification
 ### Communication
   - Ensure employees from all departments can communicate and collaborate whenever necessary.
-  - Connect both office locations so they can operate as a single organization. 
-Location A
-<img width="1228" height="656" alt="image" src="https://github.com/user-attachments/assets/ed6e6626-6079-4e31-baac-f5859ee9267f" />
+  - Connect both office locations so they can operate as a single organization.
 
-Location B
+**Location A**
+<img width="1246" height="661" alt="image" src="https://github.com/user-attachments/assets/c20e9b3e-b168-492f-b52e-8868ee186416" />
+
+**Location B**
 <img width="1564" height="662" alt="image" src="https://github.com/user-attachments/assets/02f7efec-2a9a-4b0f-a37b-25ea943c3897" />
 
 #### Communication of Location A (LAN)
@@ -268,5 +270,36 @@ We will use Bob's PC to verify communication to all PC.
 Bob is able to communicate with Matt (192.168.10.253), Alice (192.168.20.254), Don (192.168.20.253), and Cath (192.168.30.254)
 
 #### Communication from Location A to Location B
+For location B, we will communicate Network A (192.168.0.1) and Network B (192.168.1.1).
 
+We will use Alice's PC to verify connectivity to Location B. Multiple attempts was done to ping Network A and Network B to achieve 0% loss.
+<img width="882" height="619" alt="image" src="https://github.com/user-attachments/assets/df62c453-e06a-4bba-95de-7e3b429e2e51" />
 
+### Fault Tolerance/Reliability
+Let us consider that the link between either ARtr and WAN or SRtr and WAN fail. To simulate this, we will remove the link.
+
+Scenario 1: Link failure between ARtr and WAN
+
+Verify connection between Location A and Location B. We will still use Alice's PC to ping Network A and Network B.
+
+<img width="1920" height="933" alt="image" src="https://github.com/user-attachments/assets/519061b1-0d86-4dfb-93bd-3f2a14493004" />
+
+Scenario 2: Link failure between SRtr and WAN
+Verify connection between Location A and Location B. We will still use Alice's PC to ping Network A and Network B.
+
+<img width="1920" height="942" alt="image" src="https://github.com/user-attachments/assets/3a3ff340-d2ac-4c13-a95d-c82a1871ef5b" />
+
+#### HSRP verification
+Let us conside the link of ARtr and the switch failed, SRtr should become the **ACTIVE ROUTER**. To simulate link failure, we will remove the link of ARtr and the switch. Then, we will verify if we still have connectivity in the local network and to location B. We will use Matt's PC to verify connectivity.
+
+SRtr is now the Active Router
+<img width="1696" height="803" alt="image" src="https://github.com/user-attachments/assets/5454417e-04d1-42e0-8aa5-d22b8ebd15f3" />
+
+**Connectivity**
+<img width="1558" height="879" alt="image" src="https://github.com/user-attachments/assets/f7fcb52b-ba37-4c5c-bc84-4f4e545a3139" />
+
+### Company Website
+<img width="1920" height="897" alt="image" src="https://github.com/user-attachments/assets/9fc80aee-3ba3-481d-9d5f-428f8d1ba2a0" />
+
+---
+[High Availability (HSRP)](../README.md)
