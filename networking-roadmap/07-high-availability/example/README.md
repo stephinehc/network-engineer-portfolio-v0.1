@@ -240,3 +240,33 @@ ip route 0.0.0.0 0.0.0.0 g0/1 10.0.0.2
 SRtr
 ip route 0.0.0.0 0.0.0.0 g0/1 10.0.0.1
 ```
+## Verification
+### Communication
+  - Ensure employees from all departments can communicate and collaborate whenever necessary.
+  - Connect both office locations so they can operate as a single organization. 
+Location A
+<img width="1228" height="656" alt="image" src="https://github.com/user-attachments/assets/ed6e6626-6079-4e31-baac-f5859ee9267f" />
+
+Location B
+<img width="1564" height="662" alt="image" src="https://github.com/user-attachments/assets/02f7efec-2a9a-4b0f-a37b-25ea943c3897" />
+
+#### Communication of Location A (LAN)
+```text
+PC
+VLAN 10 (Sales)
+Bob	192.168.10.254/24
+Matt	192.168.10.253/24
+VLAN 20 (Billing)
+Alice	192.168.20.254/24
+Don	192.168.20.253/24
+VLAN 30 (HR)
+Cath	192.168.30.254/24
+```
+We will use Bob's PC to verify communication to all PC.
+<img width="833" height="979" alt="image" src="https://github.com/user-attachments/assets/9a95e7c8-26aa-48e8-9ee9-d328df1f97c4" />
+
+Bob is able to communicate with Matt (192.168.10.253), Alice (192.168.20.254), Don (192.168.20.253), and Cath (192.168.30.254)
+
+#### Communication from Location A to Location B
+
+
