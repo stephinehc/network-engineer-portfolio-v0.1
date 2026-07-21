@@ -246,7 +246,9 @@ ip route 0.0.0.0 0.0.0.0 g0/1 10.0.0.1
   - Ensure employees from all departments can communicate and collaborate whenever necessary.
   - Connect both office locations so they can operate as a single organization.
 
+
 **Location A**
+
 <img width="1246" height="661" alt="image" src="https://github.com/user-attachments/assets/c20e9b3e-b168-492f-b52e-8868ee186416" />
 
 **Location B**
