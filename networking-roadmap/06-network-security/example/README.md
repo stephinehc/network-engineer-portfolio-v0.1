@@ -3,6 +3,7 @@
 ---
 
 # Network Security & Cisco Access Control List (ACL) Implementation Guide
+> The network design provided is the continuation of the scenario for **7. High Availability (HSRP)**, so I recommend first to proceed to the topic [7. High Availability (HSRP)](../07-high-availability/README.md) then go back to this scenario.
 
 ## Executive Summary
 
