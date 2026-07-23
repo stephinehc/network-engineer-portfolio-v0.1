@@ -262,7 +262,7 @@ show ip interface brief
 # Network Design Project
 > The network design provided is the continuation of the scenario for **7. High Availability (HSRP)**, so I recommend first to proceed to the topic [7. High Availability (HSRP)](../07-high-availability/README.md) then go back to this scenario.
 
-[ABC Technologies – Enterprise Network Design with Basic Security](../06-network-security/example/README.md)
+[ABC Technologies – Enterprise Network Design with ACL implementation](../06-network-security/example/README.md)
 
 ---
 
