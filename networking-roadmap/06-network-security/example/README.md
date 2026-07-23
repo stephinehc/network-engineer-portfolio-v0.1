@@ -10,6 +10,7 @@
 This document provides a comprehensive, production-ready Cisco Access Control List (ACL) configuration tailored specifically to the provided network topology. The implementation leverages both **Standard** and **Extended ACLs** to achieve defense-in-depth, strict departmental isolation, administrative service restriction, and perimeter edge protection.
 
 ---
+<img width="1419" height="647" alt="image" src="https://github.com/user-attachments/assets/346257a0-af0d-4820-99b0-12dcffb7432b" />
 
 ## Network Overview & IP Addressing Scheme
 
