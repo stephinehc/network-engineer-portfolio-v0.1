@@ -241,6 +241,8 @@ ip route 0.0.0.0 0.0.0.0 10.0.0.2 10
 SRtr
 ip route 0.0.0.0 0.0.0.0 10.0.0.1 10
 ```
+The value 10 right beside the route is the administrative distance. We placed a value in order to prioritize the serial link.
+
 ## Verification
 ### Communication
   - Ensure employees from all departments can communicate and collaborate whenever necessary.
