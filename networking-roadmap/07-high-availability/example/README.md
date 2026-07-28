@@ -237,9 +237,9 @@ Upon proper evaluation, if the connection between either ARtr and the WAN or SRt
 I have added another static route between ARtr and SRtr
 ```bash
 ARtr
-ip route 0.0.0.0 0.0.0.0 g0/1 10.0.0.2
+ip route 0.0.0.0 0.0.0.0 10.0.0.2 10
 SRtr
-ip route 0.0.0.0 0.0.0.0 g0/1 10.0.0.1
+ip route 0.0.0.0 0.0.0.0 10.0.0.1 10
 ```
 ## Verification
 ### Communication
