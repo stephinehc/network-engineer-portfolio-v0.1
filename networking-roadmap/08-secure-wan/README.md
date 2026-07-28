@@ -9,6 +9,7 @@
 <p align="justify">
 This section focuses on secure Wide Area Network (WAN) connectivity using tunneling and encryption technologies. Generic Routing Encapsulation (GRE) provides a way to encapsulate packets for transport across networks, while IPsec ensures confidentiality, integrity, and authentication. Combining GRE with IPsec allows organizations to securely extend their networks across untrusted infrastructures like the internet.
 </p>
+
 ---
 
 ## Topics Covered
